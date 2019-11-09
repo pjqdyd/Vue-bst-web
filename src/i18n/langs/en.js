@@ -6,7 +6,7 @@ const en = {
         'theme': 'Theme'
     },
     pages:{
-        'page1': "Home page",
+        'page1': "Home ",
         'page2': "Page 2",
         "page3": "Page 3",
         "page4": "Page 4"

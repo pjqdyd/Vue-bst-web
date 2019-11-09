@@ -13,18 +13,25 @@ module.exports = {
   runtimeCompiler: false,
   transpileDependencies: [],
 
-  productionSourceMap: false, // 调整内部的webpack配置.
-    configureWebpack: {
-        externals: {
-            'vue': 'Vue',
-            'vuex': 'Vuex',
-            'vue-router': 'VueRouter',
-            'vue-i18n': 'VueI18n',
-            'axios':'axios',
-            'element-ui': 'ELEMENT'
-        },
-      plugins: [
-        // ...
-      ]
+  productionSourceMap: false, //调整内部的webpack配置,
+  configureWebpack: {
+      externals: {
+          'vue': 'Vue',
+          'vuex': 'Vuex',
+          'vue-router': 'VueRouter',
+          'vue-i18n': 'VueI18n',
+          'axios':'axios',
+          'element-ui': 'ELEMENT'
+      },
+    plugins: [
+      // ...
+    ]
+  },
+  css: {
+    loaderOptions: { //使用全局scss样式
+      sass: {
+        data: '@import "@/assets/styles/variables.scss";'
+      }
     }
   }
+}

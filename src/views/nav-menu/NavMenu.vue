@@ -71,6 +71,7 @@ $nav-bgColor:  rgba($color: #ffffff, $alpha: 0.2);
   justify-content: flex-end;
   align-items: center;
   .el-menu-item {
+    padding: 0 3%;
     height: $nav-height;
     line-height: $nav-height;
   }
