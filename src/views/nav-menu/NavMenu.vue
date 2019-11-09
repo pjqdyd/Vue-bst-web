@@ -75,7 +75,7 @@ $nav-bgColor:  rgba($color: #ffffff, $alpha: 0.2);
     line-height: $nav-height;
   }
   .el-item-box {
-    margin: 15px; 
+    margin: 1%; 
     color: #304156;
   }
 }
