@@ -56,7 +56,7 @@ export default {
       this.pageOne = document.getElementById("page-one").offsetTop;
       this.pageTwo = document.getElementById("page-two").offsetTop;
       this.pageThree = document.getElementById("page-three").offsetTop;
-      this.pageFour = document.getElementById("page-four").offsetTop;             
+      this.pageFour = document.getElementById("page-four").offsetTop; 
     },
 
     // 返回滑轮距顶部的距离
@@ -79,49 +79,27 @@ export default {
     handSelectChange(index) {
       switch (index) {
         case "1":
-          this.pulleyRoll(this.pageOne, this.scrolltop);
+          this.pulleyRoll(this.pageOne);
           break;
         case "2":
-          this.pulleyRoll(this.pageTwo, this.scrolltop);
+          this.pulleyRoll(this.pageTwo);
           break;
         case "3":
-          this.pulleyRoll(this.pageThree, this.scrolltop);
+          this.pulleyRoll(this.pageThree);
           break;
         case "4":
-          this.pulleyRoll(this.pageFour, this.scrolltop);
+          this.pulleyRoll(this.pageFour);
           break;
       }
     },
 
-     // 页面page向上滚动和向下滚动的函数
-     // top是page距窗体顶部的距离, distance当前滚动条与窗体顶部的距离
-    pulleyRoll(top, distance){
-      /*页面上滚*/
-      if(distance < top){
-        let small_interval = (top-distance)/50;
-        let i = 0;
-        let timer = setInterval(()=>{
-          i++;
-          distance+= small_interval;
-          document.documentElement.scrollTop = distance;
-          if(i == 50){
-            clearInterval(timer);
-          }
-        },10)
-      }
-      /*页面下滚*/
-      else if(distance > top){
-        let small_interval = (distance - top)/50;
-        let i = 0;
-        let timer = setInterval(()=>{
-          i++;
-          distance -= small_interval;
-          document.documentElement.scrollTop = distance;
-          if(i == 50){
-            clearInterval(timer);
-          }
-        },10);
-      }
+     // top是page距窗体顶部的距离
+    pulleyRoll(top){
+      //设置页面滚动到的的位置
+      window.scrollTo({ 
+        top: top, 
+        behavior: "smooth" 
+      });
     }
   },
   watch: {
