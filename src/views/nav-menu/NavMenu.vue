@@ -5,7 +5,6 @@
       :default-active="pageIndex"
       :active-text-color="$store.state.theme"
       class="nav-menu"
-      style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);"
       mode="horizontal"
       @select="handleSelect"
     >
@@ -58,7 +57,7 @@ export default {
 
 <style lang='scss' scoped>
 $nav-height: 50px;
-$nav-bgColor:  rgba($color: #ffffff, $alpha: 0.2);
+$nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
 
 .nav-menu {
   position: fixed;
@@ -76,15 +75,19 @@ $nav-bgColor:  rgba($color: #ffffff, $alpha: 0.2);
     line-height: $nav-height;
   }
   .el-item-box {
-    margin: 1%; 
+    font-size: 16px;
+    margin: 2%; 
     color: $_fontColor;
   }
 }
 .el-menu--horizontal {
   border-bottom: 0 !important;
 }
-
-.el-menu-item:not(.is-disabled):focus, .el-menu-item:not(.is-disabled):hover, .el-submenu__title:hover {
+.el-menu-item:not(.is-disabled):focus,
+.el-menu-item:not(.is-disabled):hover,
+.el-submenu__title:hover,
+.el-item-box:hover {
+    color: lightgray;
     background-color: $nav-bgColor;
 }
 </style>

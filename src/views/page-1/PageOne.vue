@@ -3,8 +3,10 @@
   <div>
     <!-- <div id="page-one" class="page-one" :style=" 'height:'+curHeight+'px' ">1</div> -->
     <div id="page-one" class="page-one">
-      <img class="triangle-right-top" src="@/assets/images/BST-Shadom.png" />
+      <img class="bst-img" src="@/assets/images/BST-Shadom.png" />
     </div>
+    <!-- 分割线 -->
+    <el-divider content-position="center">1</el-divider>
   </div>
 </template>
 
@@ -27,11 +29,11 @@ export default {
 <style lang='scss' scoped>
 .page-one {
   width: 100%;
-  .triangle-right-top {
+  .bst-img {
     right: 30%;
-    top: 150px;
-    width: 200px;
-    height: 200px;
+    top: 10rem;
+    width: 10%;
+    height: auto;
     position: relative;
     animation: triangle-jump 2s infinite;
     @keyframes triangle-jump {
