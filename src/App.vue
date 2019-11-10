@@ -19,12 +19,14 @@
           document.body.removeChild(loadingBox);
         }
         this.isShow = true; //显示vue挂载的内容
-      },1500);
+      },2000);
     }
   }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/styles/stars.scss'; //使用背景星星样式
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

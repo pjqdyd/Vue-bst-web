@@ -3,7 +3,9 @@
   <div>
     <!-- <div id="page-one" class="page-one" :style=" 'height:'+curHeight+'px' ">1</div> -->
     <div id="page-one" class="page-one">1
+
     </div>
+
   </div>
 </template>
 
@@ -30,8 +32,8 @@ export default {
   height: 1000px;
   font-size: 50px;
   color: #fff;
-  background-color: #6db9ff;
   padding: 25%;
   box-sizing: border-box;
+  background-color: #6db9ff;
 }
 </style>

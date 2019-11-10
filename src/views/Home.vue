@@ -62,16 +62,20 @@ export default {
     // 返回滑轮距顶部的距离
     getPulleyTopDistance() {
       var that = this;
-       //监听页面滚动事件
-      window.onscroll = function() {
-        that.scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+      var waiting = false; //用于优化监听scroll, 300ms执行一次
+       
+      window.onscroll = function() { //监听页面滚动事件
+          if (waiting) {return;}
+          waiting = true;
+          let distance = document.documentElement.scrollTop || document.body.scrollTop; //获取页面元素距离顶部的距离
+          //大于0表示上滚, 隐藏导航栏, 反之显示导航栏
+          distance - that.scrolltop > 0 ? that.activeNames = [''] : that.activeNames = ['nav'];
+          //赋值修改页面距顶部的距离
+          that.scrolltop = distance; 
+          setTimeout(function () { //优化监听scroll, 300ms执行一次
+            waiting = false;
+          }, 300);
       };
-
-      //监听鼠标滚动
-      window.onmousewheel = function(e){
-        //e.deltaY大于0上滚, 隐藏导航栏, 反之显示导航栏
-        e.deltaY > 0 ? that.activeNames = [''] : that.activeNames = ['nav'];
-      }
 
     },
 
