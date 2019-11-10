@@ -24,8 +24,8 @@ body{
   }
 
  #load-icon{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     opacity: 0.9;
   }
   
@@ -66,7 +66,7 @@ body{
   }
   
   #load-ul li:nth-child(-n+4) {
-    background: rgba(54,132,243,.8);
+    background: rgba(60,112,234,.8);
     box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
                       0px 0px 20px rgba(117,182,214,0.5);
   }
@@ -83,7 +83,7 @@ body{
   
   @-webkit-keyframes pulse {
     0% {
-      background: rgba(64,162,253,1);
+      background: rgba(60,112,234,1);
       box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.4),
                         0px 0px 40px 2px rgba(105,135,255,1);
     }
@@ -96,12 +96,12 @@ body{
     
   @-moz-keyframes pulse {
     0% {
-      background: rgba(54,132,243,1);
+      background: rgba(60,112,234,1);
       box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
                         0px 0px 40px 2px rgba(105,135,255,1);
     }
     100% {
-      background: rgba(54,132,243,0);
+      background: rgba(60,112,234,0);
       box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
                         0px 0px 30px 2px rgba(105,135,255,0.5);
     }
