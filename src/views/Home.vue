@@ -74,7 +74,7 @@ export default {
           that.scrolltop = distance; 
           setTimeout(function () { //优化监听scroll, 300ms执行一次
             waiting = false;
-          }, 300);
+          }, 150);
       };
 
     },
@@ -124,7 +124,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss'>
 
   //每一页的默认样式
   #page-one, #page-two, #page-three, #page-four{
@@ -133,7 +133,7 @@ export default {
     font-size: 50px;
     color: #fff;
     box-sizing: border-box;
-    background-color: #6db9ff;
+    background-color: $_bgColor;
   }
 
 </style>

@@ -19,13 +19,4 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.page-three {
-  width: 100%;
-  height: 1000px;
-  font-size: 50px;
-  color: #fff;
-  background-color: #9708CC;
-  padding: 25%;
-  box-sizing: border-box;
-}
 </style>

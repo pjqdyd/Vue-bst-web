@@ -1,6 +1,11 @@
 <template>
-  <div id="app" v-if="isShow">
-    <router-view/>
+  <div id="app">
+      <!-- 使显示时有淡入淡出效果 -->
+      <transition name="el-fade-in" duration="2000">
+        <div v-if="isShow">
+          <router-view/>
+        </div>
+      </transition>
   </div>
 </template>
 
@@ -11,7 +16,7 @@
         "isShow": false //是否显示内容
       }
     },
-    //如果加载完成, 移除index.html的加载动画, 显示vue挂载的内容
+    //如果加载完成, 移除index.html的加载动画, 显示vue挂载的组件内容
     beforeCreate(){
       setTimeout(() =>{
         let loadingBox = document.getElementById("init-loading-div");
@@ -32,11 +37,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $_fontColor;
 }
 /* 默认文字颜色 */
 .default-text-color{
-  color: #304156;
+  color: $_fontColor;
 }
 
 /* 覆盖折叠面板的'>'图标默认样式, 隐藏 */ 

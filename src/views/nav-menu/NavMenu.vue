@@ -4,7 +4,6 @@
     <el-menu
       :default-active="pageIndex"
       :active-text-color="$store.state.theme"
-      text-color="#304156"
       class="nav-menu"
       style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);"
       mode="horizontal"
@@ -72,12 +71,13 @@ $nav-bgColor:  rgba($color: #ffffff, $alpha: 0.2);
   align-items: center;
   .el-menu-item {
     padding: 0 3%;
+    color: $_fontColor;
     height: $nav-height;
     line-height: $nav-height;
   }
   .el-item-box {
     margin: 1%; 
-    color: #304156;
+    color: $_fontColor;
   }
 }
 .el-menu--horizontal {
