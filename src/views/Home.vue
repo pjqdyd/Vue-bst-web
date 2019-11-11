@@ -1,6 +1,9 @@
 <!-- 主页 -->
 <template>
   <div>
+    <!-- 星星背景 -->
+    <star-background></star-background>
+
     <!-- 折叠面板 (height:0消除默认样式)-->
     <el-collapse v-model="activeNames" style="border: 0;">
       <el-collapse-item style="height: 0; margin-botttom:0;" name="nav">
@@ -22,6 +25,7 @@ import PageOne from "@/views/page-1/PageOne"; //第一页
 import PageTwo from "@/views/page-2/PageTwo"; //第二页
 import PageThree from "@/views/page-3/PageThree"; //第三页
 import PageFour from "@/views/page-4/PageFour"; //第四页
+import StarBackground from "@/components/star-background/index.vue"; //星星背景组件
 
 export default {
   components: {
@@ -29,7 +33,8 @@ export default {
     PageOne,
     PageTwo,
     PageThree,
-    PageFour
+    PageFour,
+    StarBackground
   },
   data() {
     return {

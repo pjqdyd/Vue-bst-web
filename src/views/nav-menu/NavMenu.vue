@@ -4,6 +4,7 @@
     <el-menu
       :default-active="pageIndex"
       :active-text-color="$store.state.theme"
+      style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);"
       class="nav-menu"
       mode="horizontal"
       @select="handleSelect"
@@ -56,7 +57,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-$nav-height: 50px;
+$nav-height: 40px;
 $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
 
 .nav-menu {
@@ -87,7 +88,7 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
 .el-menu-item:not(.is-disabled):hover,
 .el-submenu__title:hover,
 .el-item-box:hover {
-    color: lightgray;
+    color: #aaa;
     background-color: $nav-bgColor;
 }
 </style>

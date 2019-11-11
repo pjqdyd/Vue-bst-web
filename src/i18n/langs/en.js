@@ -17,7 +17,7 @@ const en = {
     themeList: {
         'list': [
             //当前可选的颜色
-            { val: "#409EFF", name: "Sky Blue" },
+            { val: "#3c70ea", name: "Sky Blue" },
             { val: "#f5222d", name: "Apple Red" },
             { val: "#304156", name: "Business Ash" },
             { val: "#212121", name: "Default Black" },

@@ -17,7 +17,7 @@ const cn = {
     themeList: {
         'list': [
             //当前可选的颜色
-            { val: "#409EFF", name: "星空蓝" },
+            { val: "#3c70ea", name: "星空蓝" },
             { val: "#f5222d", name: "苹果红" },
             { val: "#304156", name: "商务灰" },
             { val: "#212121", name: "默认黑" },
