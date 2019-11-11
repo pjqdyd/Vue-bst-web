@@ -9,6 +9,12 @@
       mode="horizontal"
       @select="handleSelect"
     >
+      <!-- 左边标题和logo -->
+      <div class="el-item-box-logo">
+        <img class="bst-logo" src="@/assets/images/BST-Shadom.png"/>
+        <span class="bst-title">蓝色技术工作室宣传网</span>
+      </div>
+
       <!-- 页面(中/英文显示) -->
       <el-menu-item index="1">{{$t('pages.page1')}}</el-menu-item>
       <el-menu-item index="2">{{$t('pages.page2')}}</el-menu-item>
@@ -69,6 +75,29 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  .el-item-box-logo{
+    position: absolute;
+    left: 1rem;
+    width: 25%;
+    height: $nav-height;
+    line-height: $nav-height;
+    display: flex;
+    justify-content: flex-start;
+    .bst-logo{
+      width: auto;
+      margin: 8px;
+      height: 26px;
+    }
+    .bst-title{
+      font-family: YouYuan, '微软雅黑';
+      font-size: 18px;
+      color: $_fontColor;
+      font-weight: 600;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+  }
   .el-menu-item {
     padding: 0 3%;
     color: $_fontColor;

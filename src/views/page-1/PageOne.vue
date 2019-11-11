@@ -31,7 +31,7 @@ export default {
   width: 100%;
   .bst-img {
     right: 30%;
-    top: 10rem;
+    top: 8rem;
     width: 10%;
     height: auto;
     position: relative;
