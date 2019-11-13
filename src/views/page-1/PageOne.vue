@@ -15,12 +15,10 @@ export default {
   components: {},
   data() {
     return {
-      //curHeight: "" //窗口高度
     };
   },
   mounted() {
-    //var h = document.documentElement.clientHeight || document.body.clientHeight;
-    //this.curHeight = h; //获取窗口height
+    
   },
   methods: {}
 };
