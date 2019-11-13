@@ -12,7 +12,7 @@
       <!-- 左边标题和logo -->
       <div class="el-item-box-logo">
         <img class="bst-logo" src="@/assets/images/BST-Shadom.png"/>
-        <span class="bst-title">蓝色技术工作室宣传网</span>
+        <mobile-hide><span class="bst-title">蓝色技术工作室宣传网</span></mobile-hide>
       </div>
 
       <!-- 页面(中/英文显示) -->
@@ -37,11 +37,13 @@
 <script>
 import LangPicker from "@/components/lang-picker/index.vue"; //语言选择插件
 import ThemePicker from "@/components/theme-picker/index.vue"; //主题选择插件
+import MobileHide from "@/components/mobile-hide/index.vue";   //移动端会隐藏的组件
 
 export default {
   components: {
     LangPicker,
-    ThemePicker
+    ThemePicker,
+    MobileHide
   },
   props: {
     pageIndex: {
@@ -75,6 +77,7 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: YouYuan, '微软雅黑';
   .el-item-box-logo{
     position: absolute;
     left: 1rem;
@@ -89,13 +92,11 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
       height: 26px;
     }
     .bst-title{
-      font-family: YouYuan, '微软雅黑';
-      font-size: 18px;
+      font-size: 16px;
       color: $_fontColor;
-      font-weight: 600;
       white-space:nowrap;
       overflow:hidden;
-      text-overflow:ellipsis;
+      //text-overflow:ellipsis;
     }
   }
   .el-menu-item {
