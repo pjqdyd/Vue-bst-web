@@ -76,6 +76,7 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
   background: $nav-bgColor;
   display: flex;
   justify-content: flex-end;
+  z-index: 999;
   align-items: center;
   font-family: YouYuan, '微软雅黑';
   .el-item-box-logo{
