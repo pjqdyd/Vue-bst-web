@@ -1,7 +1,7 @@
 <!-- 第3页 -->
 <template>
   <div>
-    <div id="page-three" class="page-three">
+    <div id="page-three" class="page-three"  :style="{height: $pageHeight+'px' }">
 
     </div>
     <!-- 分割线 -->
