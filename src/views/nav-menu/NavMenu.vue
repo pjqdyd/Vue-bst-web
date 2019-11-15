@@ -11,8 +11,10 @@
     >
       <!-- 左边标题和logo -->
       <div class="el-item-box-logo">
-        <img class="bst-logo" src="@/assets/images/BST-Shadom.png"/>
-        <mobile-hide><span class="bst-title">蓝色技术工作室宣传网</span></mobile-hide>
+        <mobile-hide>
+          <img class="bst-logo" src="@/assets/images/BST-Shadom.png" />
+          <span class="bst-title">蓝色技术工作室宣传网</span>
+        </mobile-hide>
       </div>
 
       <!-- 页面(中/英文显示) -->
@@ -37,7 +39,7 @@
 <script>
 import LangPicker from "@/components/lang-picker/index.vue"; //语言选择插件
 import ThemePicker from "@/components/theme-picker/index.vue"; //主题选择插件
-import MobileHide from "@/components/mobile-hide/index.vue";   //移动端会隐藏的组件
+import MobileHide from "@/components/mobile-hide/index.vue"; //移动端会隐藏的组件
 
 export default {
   components: {
@@ -66,7 +68,10 @@ export default {
 
 <style lang='scss' scoped>
 $nav-height: 40px;
-$nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
+$nav-bgColor: rgba(
+  $color: $_bgColor,
+  $alpha: 0.2
+);
 
 .nav-menu {
   position: fixed;
@@ -78,8 +83,8 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
   justify-content: flex-end;
   z-index: 999;
   align-items: center;
-  font-family: YouYuan, '微软雅黑';
-  .el-item-box-logo{
+  font-family: YouYuan, "微软雅黑";
+  .el-item-box-logo {
     position: absolute;
     left: 1rem;
     width: 25%;
@@ -87,16 +92,17 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
     line-height: $nav-height;
     display: flex;
     justify-content: flex-start;
-    .bst-logo{
+    .bst-logo {
       width: auto;
       margin: 8px;
       height: 26px;
+      float: left;
     }
-    .bst-title{
+    .bst-title {
       font-size: 16px;
       color: $_fontColor;
-      white-space:nowrap;
-      overflow:hidden;
+      white-space: nowrap;
+      overflow: hidden;
       //text-overflow:ellipsis;
     }
   }
@@ -108,7 +114,7 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
   }
   .el-item-box {
     font-size: 16px;
-    margin: 2%; 
+    margin: 2%;
     color: $_fontColor;
   }
 }
@@ -119,7 +125,7 @@ $nav-bgColor:  rgba($color: $_bgColor, $alpha: 0.2);
 .el-menu-item:not(.is-disabled):hover,
 .el-submenu__title:hover,
 .el-item-box:hover {
-    color: #aaa;
-    background-color: $nav-bgColor;
+  color: #aaa;
+  background-color: $nav-bgColor;
 }
 </style>
