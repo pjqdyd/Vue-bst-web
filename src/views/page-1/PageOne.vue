@@ -35,6 +35,7 @@ export default {
 <style lang='scss' scoped>
 .page-one {
   width: 100%;
+  position: relative;
   .bst-img {
     right: 30%;
     top: 8rem;

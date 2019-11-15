@@ -28,7 +28,7 @@
 export default {
   components: {},
   data() {
-    return { };
+    return {};
   },
   mounted() {},
   methods: {}
@@ -49,12 +49,7 @@ export default {
 }
 .waveWrapper {
   overflow: hidden;
-  position: absolute;
-  left: 0;
   height: 150px;
-  right: 0;
-  bottom: 0;
-  //top: 0;
   margin: auto;
 }
 .waveWrapperInner {
@@ -63,8 +58,6 @@ export default {
   overflow: hidden;
   height: 150px;
   bottom: -1px;
-  //z-index: 0;
-  //background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
 }
 .bgTop {
   z-index: 15;
