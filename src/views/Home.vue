@@ -1,8 +1,7 @@
 <!-- 主页 -->
 <template>
   <div>
-    <!-- 星星背景 -->
-    <star-background></star-background>
+    
 
     <!-- 折叠面板 (height:0消除默认样式)-->
     <el-collapse v-model="activeNames" style="border: 0;">
@@ -12,10 +11,19 @@
       </el-collapse-item>
     </el-collapse>
     
+    <!-- 第一页 -->
     <page-one></page-one>
+
+    <!-- 星星背景, 从第一页下面开始出现 -->
+    <star-background></star-background>
+
     <page-two></page-two>
+
     <page-three></page-three>
+
     <page-four></page-four>
+
+   
   </div>
 </template>
 
