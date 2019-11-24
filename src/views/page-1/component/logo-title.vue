@@ -38,9 +38,9 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #ccc;
+  //background-color: #ccc;
   .bst-img {
-    width: 15%;
+    width: 80px;
     height: auto;
     animation: triangle-jump 2s infinite;
     @keyframes triangle-jump {
