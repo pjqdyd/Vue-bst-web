@@ -69,7 +69,6 @@ export default {
 
 <style lang='scss' scoped>
 $nav-height: 40px;
-//$nav-bgColor: rgba($color: $_bgColor,$alpha: 0.2);
 $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
 
 .nav-menu {
@@ -110,9 +109,9 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
     color: $_fontColor;
     height: $nav-height;
     line-height: $nav-height;
+    font-size: 16px;
   }
   .el-item-box {
-    font-size: 16px;
     margin: 2%;
     color: $_fontColor;
   }
@@ -124,7 +123,7 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
 .el-menu-item:not(.is-disabled):hover,
 .el-submenu__title:hover,
 .el-item-box:hover {
-  color: #aaa;
+  color: #fff;
   background-color: $nav-bgColor;
 }
 </style>

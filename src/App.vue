@@ -49,4 +49,9 @@
   visibility: hidden;
   /* opacity: 0; */
 }
+
+/* 默认下拉菜单文字大小 */
+.el-dropdown{
+  font-size: 17px;
+}
 </style>
