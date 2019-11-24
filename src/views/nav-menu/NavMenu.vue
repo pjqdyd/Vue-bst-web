@@ -92,9 +92,12 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
     justify-content: flex-start;
     .bst-logo {
       width: auto;
-      margin: 8px;
-      height: 26px;
+      padding: 4px;
+      margin: 4px;
+      height: 24px;
       float: left;
+      border-radius: 50%;
+      background-color: #fff;
     }
     .bst-title {
       font-size: 16px;
