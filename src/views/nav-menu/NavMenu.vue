@@ -1,14 +1,15 @@
 <!-- 顶部导航菜单 -->
 <template>
   <div>
+    
     <el-menu
       :default-active="pageIndex"
       :active-text-color="$store.state.theme"
-      style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);"
       class="nav-menu"
       mode="horizontal"
       @select="handleSelect"
-    >
+    ><!-- style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);" -->
+
       <!-- 左边标题和logo -->
       <div class="el-item-box-logo">
         <mobile-hide>
@@ -68,14 +69,12 @@ export default {
 
 <style lang='scss' scoped>
 $nav-height: 40px;
-$nav-bgColor: rgba(
-  $color: $_bgColor,
-  $alpha: 0.2
-);
+//$nav-bgColor: rgba($color: $_bgColor,$alpha: 0.2);
+$nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
 
 .nav-menu {
   position: fixed;
-  top: 0;
+  top: 5px;
   width: 100%;
   height: $nav-height;
   background: $nav-bgColor;
@@ -83,7 +82,7 @@ $nav-bgColor: rgba(
   justify-content: flex-end;
   z-index: 999;
   align-items: center;
-  font-family: YouYuan, "微软雅黑";
+  font-family: Helvetica,"微软雅黑";
   .el-item-box-logo {
     position: absolute;
     left: 1rem;

@@ -31,16 +31,16 @@ export default {
 
 <style lang='scss' scoped>
 .log-title-box{
-  width: 33%;
+  width: 40%;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 200px;
+  padding-top: 13%;
   display: flex;
   flex-direction: column;
   position: relative;
   //background-color: #ccc;
   .bst-img {
-    width: 80px;
+    width: 100px;
     height: auto;
     animation: triangle-jump 2s infinite;
     @keyframes triangle-jump {
@@ -55,7 +55,7 @@ export default {
   }
   .bst-title {
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 8px;
@@ -67,7 +67,7 @@ export default {
     background-clip: text;
   }
   .bst-title-en{
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     text-decoration: underline;
   }

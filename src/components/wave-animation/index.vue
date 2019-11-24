@@ -61,11 +61,11 @@ export default {
 }
 .bgTop {
   z-index: 15;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .bgMiddle {
   z-index: 10;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 .bgBottom {
   z-index: 5;
@@ -80,19 +80,16 @@ export default {
   transform-origin: center bottom;
 }
 .waveTop {
-  background-size: 50% 100px;
-  animation: move-wave 3s;
-  -webkit-animation: move-wave 3s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  background-size: 50% 120px;
+  animation: move_wave 5s linear infinite;
 }
  
 .waveMiddle {
-  background-size: 50% 120px;
+  background-size: 50% 100px;
   animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-  background-size: 50% 100px;
+  background-size: 50% 120px;
   animation: move_wave 15s linear infinite;
 }
 </style>
