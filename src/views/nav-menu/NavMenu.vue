@@ -84,7 +84,7 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
   font-family: Helvetica,"微软雅黑";
   .el-item-box-logo {
     position: absolute;
-    left: 1rem;
+    left: 1.5rem;
     width: 25%;
     height: $nav-height;
     line-height: $nav-height;
@@ -93,7 +93,7 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
     .bst-logo {
       width: auto;
       padding: 4px;
-      margin: 4px;
+      margin: 4px 10px;
       height: 24px;
       float: left;
       border-radius: 50%;
