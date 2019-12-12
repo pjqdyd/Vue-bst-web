@@ -60,15 +60,16 @@ export default {
   bottom: -1px;
 }
 .bgTop {
-  z-index: 15;
+  //z-index: 15;
   opacity: 0.4;
 }
 .bgMiddle {
-  z-index: 10;
+  //z-index: 10;
   opacity: 0.7;
 }
 .bgBottom {
-  z-index: 5;
+  //z-index: 5;
+  opacity: 1;
 }
 .wave {
   position: absolute;
