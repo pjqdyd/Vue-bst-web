@@ -2,7 +2,7 @@
 <template>
   <div>
     <div id="page-two" class="page-two" :style="{height: $pageHeight+'px' }">
-
+        <console-mac></console-mac>
     </div>
     <!-- 分割线 -->
     <el-divider content-position="center">2</el-divider>
@@ -10,8 +10,13 @@
 </template>
 
 <script>
+
+import ConsoleMac from "@/components/console-mac/index.vue"; //Mac风格控制台组件
+
 export default {
-  components: {},
+  components: {
+    ConsoleMac
+  },
   data() {
     return {
     };
