@@ -54,4 +54,12 @@
 .el-dropdown{
   font-size: 17px;
 }
+
+/* 默认下拉文字的颜色 */
+.el-dropdown-link{
+  color: #eee;
+}
+.el-dropdown-link:hover{
+  color: #fff;
+}
 </style>

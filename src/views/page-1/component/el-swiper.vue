@@ -2,24 +2,29 @@
 <template>
   <div class="el-swiper">
     <el-carousel indicator-position="none" :height="$pageHeight + 'px'">
-      <el-carousel-item>
-        <h3>1</h3>
-      </el-carousel-item>
-      <el-carousel-item>
-        <h3>2</h3>
-      </el-carousel-item>
-      <el-carousel-item>
-        <h3>3</h3>
-      </el-carousel-item>
+
+      <block v-for="(image, index) in swiperList" :key="index">
+        <el-carousel-item>
+          <img class="swiper-image" :src="image">
+        </el-carousel-item>
+      </block>
+
     </el-carousel>
   </div>
 </template>
 
 <script>
+
+import swiper1 from "@/assets/images/swiper/swiper1.png";
+import swiper2 from "@/assets/images/swiper/swiper2.png";
+import swiper3 from "@/assets/images/swiper/swiper3.png";
+
 export default {
   components: {},
   data() {
-    return {};
+    return {
+      swiperList: [swiper1, swiper2, swiper3]
+    };
   },
   beforeMount() {},
   mounted() {},
@@ -35,17 +40,5 @@ export default {
   top: 0;
   line-height: 750px;
   z-index: 0;
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 18px;
-    margin: 0;
-    height: 750px;
-  }
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-  .el-carousel__item:nth-child(2n + 1) {
-    background-color: #d3dce6;
-  }
 }
 </style>

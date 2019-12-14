@@ -4,11 +4,11 @@
     
     <el-menu
       :default-active="pageIndex"
-      :active-text-color="$store.state.theme"
+      active-text-color="#fff"
       class="nav-menu"
       mode="horizontal"
       @select="handleSelect"
-    ><!-- style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);" -->
+    ><!-- style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);" :text-color="$store.state.theme" --> 
 
       <!-- 左边标题和logo -->
       <div class="el-item-box-logo">
@@ -69,6 +69,7 @@ export default {
 
 <style lang='scss' scoped>
 $nav-height: 40px;
+$nav-textColor: #eee;
 $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
 
 .nav-menu {
@@ -101,7 +102,7 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
     }
     .bst-title {
       font-size: 16px;
-      color: $_fontColor;
+      color: $nav-textColor;
       white-space: nowrap;
       overflow: hidden;
       //text-overflow:ellipsis;
@@ -109,14 +110,14 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
   }
   .el-menu-item {
     padding: 0 3%;
-    color: $_fontColor;
+    color: $nav-textColor;
     height: $nav-height;
     line-height: $nav-height;
     font-size: 16px;
   }
   .el-item-box {
     margin: 2%;
-    color: $_fontColor;
+    color: #fff;
   }
 }
 .el-menu--horizontal {
