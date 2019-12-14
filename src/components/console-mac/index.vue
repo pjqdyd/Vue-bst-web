@@ -1,14 +1,12 @@
 <!-- Mac 风格的控制台 -->
 <template>
-  <div>
-    <div class="window-box">
-       <div class="top-bar">
-        <span class="close btn"></span>
-        <span class="min btn"></span>
-        <span class="max btn"></span>
-      </div>
-      <div class="text">这是一段文字</div>
+  <div class="window-box">
+    <div class="top-bar">
+      <span class="close btn"></span>
+      <span class="min btn"></span>
+      <span class="max btn"></span>
     </div>
+    <div class="text">这是一段文字</div>
   </div>
 </template>
 
@@ -28,6 +26,7 @@ export default {
   margin: auto;
   width: 500px;
   height: 300px;
+  float: right;
   position: relative;
   background-color: #232323;
   box-sizing: border-box;

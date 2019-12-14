@@ -34,7 +34,7 @@ export default {
   width: 40%;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 13%;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   position: relative;

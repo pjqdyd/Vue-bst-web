@@ -5,8 +5,13 @@
       <!-- 轮播图组件 -->
       <el-swiper></el-swiper>
 
-      <!-- 图标标题组件 -->
-      <logo-title></logo-title>
+      <div class="logo-info-box">
+        <!-- 图标标题组件 -->
+        <logo-title></logo-title>
+
+        <!-- 介绍卡片组件 -->
+        <info-card></info-card>
+      </div>
 
       <!-- 波浪动画组件 -->
       <wave-animation></wave-animation>
@@ -15,15 +20,17 @@
 </template>
 
 <script>
-import ElSwiper from "./component/el-swiper.vue";                  //轮播图组件
-import LogoTitle from "./component/logo-title.vue";                //图标标题组件
+import ElSwiper from "./component/el-swiper.vue"; //轮播图组件
+import LogoTitle from "./component/logo-title.vue"; //图标标题组件
+import InfoCard from "./component/info-card.vue";   //介绍卡片组件
 import WaveAnimation from "@/components/wave-animation/index.vue"; //波浪动画组件
 
 export default {
   components: {
     ElSwiper,
     LogoTitle,
-    WaveAnimation
+    InfoCard,
+    WaveAnimation,
   },
   data() {
     return {};
@@ -37,5 +44,10 @@ export default {
 .page-one {
   width: 100%;
   position: relative;
+  .logo-info-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 </style>
