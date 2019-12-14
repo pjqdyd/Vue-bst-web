@@ -5,7 +5,7 @@
 
       <block v-for="(image, index) in swiperList" :key="index">
         <el-carousel-item>
-          <img class="swiper-image" :src="image">
+          <div class="swiper-image" :style="{backgroundImage: 'url(' + image + ')' }" ></div>
         </el-carousel-item>
       </block>
 
@@ -35,10 +35,16 @@ export default {
 <style lang='scss' scoped>
 .el-swiper {
   width: 100%;
-  height: 750px;
   position: absolute;
   top: 0;
-  line-height: 750px;
+  overflow: hidden;
   z-index: 0;
+  .swiper-image{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 </style>
