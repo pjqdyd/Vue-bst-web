@@ -10,11 +10,11 @@
       @select="handleSelect"
     ><!-- style="box-shadow: 0  1px 10px rgba(0, 0, 150, .2);" :text-color="$store.state.theme" --> 
 
-      <!-- 左边标题和logo -->
+      <!-- 左边logo和标题 -->
       <div class="el-item-box-logo">
         <mobile-hide>
           <img class="bst-logo" src="@/assets/images/BST-Shadom.png" />
-          <span class="bst-title">蓝色技术工作室宣传网</span>
+          <span class="bst-title">{{$t('bst.nav-title')}}</span> <!--标题分中英文显示 -->
         </mobile-hide>
       </div>
 

@@ -11,6 +11,10 @@ const en = {
         "page3": "Page 3",
         "page4": "Page 4"
     },
+    bst: {
+        'title': 'BLUE TECHNOLOGY STUDIO',
+        'nav-title': 'Blue studio of technology web'
+    },
     button:{
         'delete': 'Delete',
     },

@@ -6,9 +6,9 @@
          <img class="bst-img" src="@/assets/images/BST-Shadom.png" />
       </div>
      
-      <!-- bst标题 -->
-      <div>
-        <h1 class="bst-title">蓝色技术工作室</h1>
+      <!-- bst标题 中文: 蓝色技术工作室, 英文: Blue Technology Studio-->
+      <div class="bst-title-box">
+        <h1 class="bst-title">{{$t('bst.title')}}</h1>
       </div>
 
       <div>
@@ -35,6 +35,7 @@ export default {
   height: 100%;
   box-sizing: border-box;
   padding-top: 10%;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -72,5 +73,4 @@ export default {
     text-decoration: underline;
   }
 }
-
 </style>

@@ -44,6 +44,7 @@ export default {
 .page-one {
   width: 100%;
   position: relative;
+  overflow: hidden;
   .logo-info-box{
     position: relative;
     display: flex;

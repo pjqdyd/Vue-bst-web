@@ -11,6 +11,10 @@ const cn = {
         "page3": "第3页",
         "page4": "第4页"
     },
+    bst: {
+        'title': '蓝色技术工作室',
+        'nav-title': '蓝色技术工作室宣传网'
+    },
     button:{
         'delete': '删除',
     },
