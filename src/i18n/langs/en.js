@@ -13,7 +13,19 @@ const en = {
     },
     bst: {
         'title': 'BLUE TECHNOLOGY STUDIO',
-        'nav-title': 'Blue studio of technology web'
+        'nav-title': 'Blue studio of technology web',
+        'info-title': 'Introduction:',
+        'info-content': 'Blue technology studio was founded in October 2011, aims to improve students ' +
+                        'interest in science and technology and cognitive ability, make the students ' +
+                        'actively under constant research and exploration of science and technology, ' +
+                        'let the students a platform to communicate with one another, the combination ' +
+                        'of study and practice so that the students knowledge level has reached a higher ' +
+                        'level. We focus on training electronic, automotive, mechanical, software ' +
+                        'professionals, training their hands-on ability and innovative thinking. ' +
+                        'Since the establishment of the team, it has cultivated a batch of students ' +
+                        'with solid professional foundation. After five years of hard work, we have ' +
+                        'participated in various competitions held in jiangxi province and across ' +
+                        'the country, covering automobile, machinery, electronics, computer and other disciplines.'
     },
     button:{
         'delete': 'Delete',
