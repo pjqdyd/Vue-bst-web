@@ -28,7 +28,7 @@ export default {
   width: 30%;
   padding: 15px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 12%;
   overflow-y: auto;
   border-radius: 30px;
   position: relative;
