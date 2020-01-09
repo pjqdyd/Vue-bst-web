@@ -7,9 +7,9 @@ const en = {
     },
     pages:{
         'page1': "Home ",
-        'page2': "Page 2",
-        "page3": "Page 3",
-        "page4": "Page 4"
+        'page2': "TS",
+        "page3": "TH",
+        "page4": "Other"
     },
     bst: {
         'title': 'BLUE TECHNOLOGY STUDIO',

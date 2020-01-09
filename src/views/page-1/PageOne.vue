@@ -49,6 +49,7 @@ export default {
     position: relative;
     display: flex;
     justify-content: space-between;
+    //pointer-events:none; //阻止鼠标事件
   }
 }
 </style>

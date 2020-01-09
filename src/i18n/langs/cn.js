@@ -7,9 +7,9 @@ const cn = {
     },
     pages:{
         'page1': "首页",
-        'page2': "第2页",
-        "page3": "第3页",
-        "page4": "第4页"
+        'page2': "软件部",
+        "page3": "硬件部",
+        "page4": "推广"
     },
     bst: {
         'title': '蓝色技术工作室',
