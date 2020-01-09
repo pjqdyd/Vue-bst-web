@@ -2,6 +2,7 @@
 <template>
   <div>
     <div id="page-two" class="page-two" :style="{height: $pageHeight+'px' }">
+     
     </div>
     <!-- 分割线 -->
     <el-divider content-position="center">2</el-divider>
@@ -24,4 +25,6 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+  .page-two{
+  }
 </style>
