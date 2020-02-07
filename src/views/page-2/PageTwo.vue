@@ -13,6 +13,7 @@
           </el-col>
         </el-row>
       </div>
+
     </div>
     <!-- 分割线 -->
     <el-divider content-position="center">2</el-divider>
@@ -52,9 +53,10 @@ export default {
 
   .row-card-box {
     margin: auto;
-    width: 95%;
-    height: auto;
+    padding: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
   }
 }
 </style>
