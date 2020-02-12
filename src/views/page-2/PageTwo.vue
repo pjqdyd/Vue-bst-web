@@ -8,8 +8,8 @@
       <!-- 软件部的信息卡片 -->
       <div class="row-card-box">
         <el-row id="el-row" type="flex" justify="space-around">
-          <el-col span="5" v-for="index in 5" :key="index">
-            <software-card></software-card>
+          <el-col span="5" v-for="(cardBG, index) in cardBGList" :key="index">
+            <software-card :image="cardBG"></software-card>
           </el-col>
         </el-row>
       </div>
@@ -21,14 +21,22 @@
 </template>
 
 <script>
-import SoftwareCard from "./component/software-card.vue"; //软件部卡片
+import SoftwareCard from "./component/software-card.vue"; //软件部卡片组件
+
+import cardBG1 from "@/assets/images/software/1.jpg"; //卡片背景
+import cardBG2 from "@/assets/images/software/2.jpg";
+import cardBG3 from "@/assets/images/software/3.jpg";
+import cardBG4 from "@/assets/images/software/4.jpg";
+import cardBG5 from "@/assets/images/software/5.jpg";
 
 export default {
   components: {
     SoftwareCard
   },
   data() {
-    return {};
+    return {
+      cardBGList: [cardBG1, cardBG2, cardBG3, cardBG4, cardBG5] //卡片背景图片集合
+    };
   },
   mounted() {
     //当在移动端时, 设置卡片box的宽度, 使超出的卡片可横向滚动
