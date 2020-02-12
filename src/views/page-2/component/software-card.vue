@@ -7,7 +7,7 @@
                 {paddingTop: $pageHeight*0.55 +'px'},
                 {backgroundImage: 'url(' + image + ')' }
         ]">
-        <div class="text-box" :style="{height: $pageHeight*0.65 +'px'}">
+        <div class="text-box" :style="[{height: $pageHeight*0.65 +'px'}, {backgroundColor: $store.state.theme}]">
           文字盒子
         </div>
       </div>
@@ -38,6 +38,7 @@ $shadow-color:  rgba(0, 0, 150, .2);
 .card-box {
   margin: 0 4% 0 4%;
   box-sizing: border-box;
+  opacity: .8;
   .el-card {
     border: 0;
     overflow: hidden;
@@ -58,7 +59,7 @@ $shadow-color:  rgba(0, 0, 150, .2);
     .text-box{
       color: #fff;
       position: relative;
-      background-color: #eaeaea;
+      opacity: .8;
     }
   }
   .image-box:hover{ //播放动画, 播放一次, 并停留在最后一帧
