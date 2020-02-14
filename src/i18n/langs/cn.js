@@ -41,7 +41,7 @@ const cn = {
             },
             {
                 icon: "&#xe6cd;",
-                title: "Audroid/ios移动端",
+                title: "Android/ios移动端",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             },
             {

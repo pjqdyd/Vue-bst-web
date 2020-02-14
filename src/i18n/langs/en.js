@@ -45,7 +45,7 @@ const en = {
             },
             {
                 icon: "&#xe6cd;",
-                title: "Audroid/ios",
+                title: "Android/ios",
                 contant: "english"
             },
             {
