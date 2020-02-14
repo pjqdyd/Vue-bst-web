@@ -14,7 +14,7 @@
       <div class="el-item-box-logo">
         <mobile-hide>
           <img class="bst-logo" src="@/assets/images/BST-Shadom.png" />
-          <span class="bst-title">{{$t('bst.nav-title')}}</span> <!--标题分中英文显示 -->
+          <div class="bst-title">{{$t('bst.nav-title')}}</div> <!--标题分中英文显示 -->
         </mobile-hide>
       </div>
 
@@ -101,11 +101,11 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
       background-color: #fff;
     }
     .bst-title {
-      font-size: 16px;
+      font-size: 17px;
       color: $nav-textColor;
       white-space: nowrap;
       overflow: hidden;
-      //text-overflow:ellipsis;
+      text-overflow:ellipsis;
     }
   }
   .el-menu-item {
