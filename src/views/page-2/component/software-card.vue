@@ -12,12 +12,12 @@
         <div class="text-box" :style="[{height: $pageHeight*0.7 +'px'}, {backgroundColor: $store.state.theme}]">
           <!-- 图标标题 -->
           <div class="text-title">
-            <i class="iconfont icon-title" v-html="icon"></i>
-            Web前端
+            <i class="iconfont icon-title" v-html="text.icon"></i>
+            {{text.title}}
           </div>
           <!-- 介绍内容 -->
           <div class="text-contant">
-            蓝色技术工作室成立于 2011 年 10 月，旨在提高学生对科学技术的兴趣和认知能力，使同学们积极地对科学技术进行不断的研究和探索，让同学们有一个相互交流的平台，实现学习和实践相结合，从而使同学们的知识水平达到一个更高的层次。我们着重培养电子、汽车、机械、软件方面的专业人才，培养其动手能力和创新思维。自团队成立来，它培养了一批又一批专业基础扎实的学生。经过五年的努力，我们参与了江西省及全国举办的各类比赛 , 涵盖汽车，机械，电子，计算机等各个学科。
+             {{text.contant}}
           </div>
 
         </div>
@@ -29,16 +29,18 @@
 <script>
 export default {
   props: {
-    image: { //图片背景
+    image: { //背景图片
+      type: Object,
+      default: null
+    },
+    text: { //文字内容
       type: Object,
       default: null
     }
   },
   components: {},
   data() {
-    return {
-      icon: "&#xe6db;"
-    };
+    return {};
   },
   mounted() {
   },

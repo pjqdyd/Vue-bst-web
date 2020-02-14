@@ -3,13 +3,13 @@
   <div>
     <div id="page-two" class="page-two" :style="{height: $pageHeight+'px' }">
       <!-- 软件部标题 -->
-      <div class="title-box" :style="{color: $store.state.theme}">软件部</div>
+      <div class="title-box" :style="{color: $store.state.theme}">{{$t("bst.team-software")}}</div>
 
       <!-- 软件部的信息卡片 -->
       <div class="row-card-box">
         <el-row id="el-row" type="flex" justify="space-around">
           <el-col span="5" v-for="(cardBG, index) in cardBGList" :key="index">
-            <software-card :image="cardBG"></software-card>
+            <software-card :image="cardBG" :text="textList[index]"></software-card>
           </el-col>
         </el-row>
       </div>
@@ -35,17 +35,23 @@ export default {
   },
   data() {
     return {
-      cardBGList: [cardBG1, cardBG2, cardBG3, cardBG4, cardBG5] //卡片背景图片集合
+      cardBGList: [cardBG1, cardBG2, cardBG3, cardBG4, cardBG5], //卡片背景图片集合
+      //textList: this.$t("bst.software-info-list")              //来自对应语言的文字列表
     };
   },
   mounted() {
     //当在移动端时, 设置卡片box的宽度, 使超出的卡片可横向滚动
-    if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile)/i)) {
+    if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile|MQQBrowser|MicroMessenger)/i)) {
       var elRow = document.getElementById("el-row");
       elRow.style.width = document.documentElement.clientWidth * 5 + "px";
     }
   },
-  methods: {}
+  methods: {},
+  computed: {
+    textList(){ //通过计算属性返回来自对应语言的文字列表, 避免切换语言时无响应
+      return this.$t("bst.software-info-list");
+    }
+  }
 };
 </script>
 

@@ -25,7 +25,35 @@ const en = {
                         'Since the establishment of the team, it has cultivated a batch of students ' +
                         'with solid professional foundation. After five years of hard work, we have ' +
                         'participated in various competitions held in jiangxi province and across ' +
-                        'the country, covering automobile, machinery, electronics, computer and other disciplines.'
+                        'the country, covering automobile, machinery, electronics, computer and other disciplines.',
+        'team-software': "Team Software",
+        'software-info-list': [
+            {
+                icon: "&#xe603;",
+                title: "Web FrontEnd",
+                contant: "english"
+            },
+            {
+                icon: "&#xe668;",
+                title: "UI Design",
+                contant: "english"
+            },
+            {
+                icon: "&#xe642;",
+                title: "Product Design",
+                contant: "english"
+            },
+            {
+                icon: "&#xe6cd;",
+                title: "Audroid/ios",
+                contant: "english"
+            },
+            {
+                icon: "&#xe7de;",
+                title: "BackEnd",
+                contant: "english"
+            }
+        ]
     },
     button:{
         'delete': 'Delete',
