@@ -14,7 +14,7 @@ export default {
     };
   },
   mounted() {
-    if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|IEMobile)/i)) {
+    if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|IEMobile|MQQBrowser|MicroMessenger)/i)) {
       this.isShow = false;
     }
   },
