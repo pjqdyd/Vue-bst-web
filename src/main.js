@@ -5,7 +5,7 @@ import store from './store'
 import ELEMENT  from 'element-ui'
 import {sync} from 'vuex-router-sync'
 import i18n from './i18n/i18n'
-import './assets/iconfont/iconfont.css'
+import '@/assets/iconfont/iconfont.css'
 
 import http from './utils/http'; //引入请求工具
 
