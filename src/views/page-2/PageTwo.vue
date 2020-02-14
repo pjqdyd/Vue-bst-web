@@ -3,7 +3,7 @@
   <div>
     <div id="page-two" class="page-two" :style="{height: $pageHeight+'px' }">
       <!-- 软件部标题 -->
-      <div class="title-box">软件部</div>
+      <div class="title-box" :style="{color: $store.state.theme}">软件部</div>
 
       <!-- 软件部的信息卡片 -->
       <div class="row-card-box">
