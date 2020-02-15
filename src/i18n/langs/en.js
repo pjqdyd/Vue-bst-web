@@ -27,6 +27,7 @@ const en = {
                         'participated in various competitions held in jiangxi province and across ' +
                         'the country, covering automobile, machinery, electronics, computer and other disciplines.',
         'team-software': "Team Software",
+        'text-software': "This is a magic department",
         'software-info-list': [
             {
                 icon: "&#xe603;",
