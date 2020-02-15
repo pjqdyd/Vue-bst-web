@@ -10,9 +10,10 @@
         ]">
         <!-- 文字内容盒子 -->
         <div class="text-box" :style="[{height: $pageHeight*0.7 +'px'}, {backgroundColor: $store.state.theme}]">
+          
           <!-- 图标标题 -->
           <div class="text-title">
-            <i class="iconfont icon-title" v-html="text.icon"></i>
+            <i class="iconfont" v-html="text.icon"></i>
             {{text.title}}
           </div>
           <!-- 介绍内容 -->
@@ -83,9 +84,6 @@ $shadow-color:  rgba(0, 0, 150, .2);
         overflow : hidden;
         text-overflow: ellipsis;
         box-sizing: border-box;
-        .text-icon{
-          font-size: 80px;
-        }
       }
       .text-contant{
         text-indent: 2em;
