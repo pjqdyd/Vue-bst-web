@@ -47,6 +47,7 @@ export default {
   overflow: hidden;
   .logo-info-box{
     position: relative;
+    top: 50px;
     display: flex;
     justify-content: space-between;
     //pointer-events:none; //阻止鼠标事件

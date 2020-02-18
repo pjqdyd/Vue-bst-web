@@ -53,10 +53,10 @@ export default {
   },
   mounted() {
     //当在移动端时, 设置卡片box的宽度, 使超出的卡片可横向滚动
-    if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile|MQQBrowser|MicroMessenger)/i)) {
-      var elRow = document.getElementById("el-row");
-      elRow.style.width = document.documentElement.clientWidth * 5 + "px";
-    }
+    // if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile|MQQBrowser|MicroMessenger)/i)) {
+    //   var elRow = document.getElementById("el-row");
+    //   elRow.style.width = document.documentElement.clientWidth * 5 + "px";
+    // }
   },
   methods: {},
   computed: {
@@ -98,6 +98,12 @@ export default {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+//媒体查询, 适应不同宽度
+@media screen and (max-width: $_maxWidth) {
+  #el-row{
+    width: calc(100vw * 5);
   }
 }
 </style>

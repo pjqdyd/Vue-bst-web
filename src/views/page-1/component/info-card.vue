@@ -14,10 +14,10 @@ export default {
   },
   mounted() {
     //当在移动端时, 设置卡片的高度, 使超出卡片的文字内容可滚动
-    if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile)/i)) {
-      var bstText = document.getElementById("bst-text");
-      bstText.style.height = (this.$pageHeight * 0.65) + 'px';
-    }
+    // if (navigator.userAgent.match(/(phone|iPhone|ios|Android|Mobile|IEMobile)/i)) {
+    //   var bstText = document.getElementById("bst-text");
+    //   bstText.style.height = (this.$pageHeight * 0.65) + 'px';
+    // }
   },
   methods: {}
 };
@@ -25,14 +25,13 @@ export default {
 
 <style lang='scss' scoped>
 .info-card{
-  width: 30%;
+  width: 35%;
   padding: 15px;
   margin: auto;
-  margin-top: 12%;
+  margin-top: 10%;
+  margin-right: 10%;
   overflow-y: auto;
   border-radius: 30px;
-  position: relative;
-  top: 40px;
   box-sizing: border-box;
   box-shadow: 0  1px 10px rgba(0, 0, 150, .2);
   background-color: rgba($color: #fff, $alpha: 0.2);
@@ -46,5 +45,13 @@ export default {
 }
 .info-card::-webkit-scrollbar {
     display: none;/*隐藏滚动条*/
+}
+
+//媒体查询, 适应不同宽高度
+@media screen and (max-width: $_maxWidth) {
+  #bst-text{
+    font-size: 14px;
+    height: calc(60vh);
+  }
 }
 </style>

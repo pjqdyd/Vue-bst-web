@@ -105,4 +105,11 @@ $shadow-color:  rgba(0, 0, 150, .2);
 	0% {padding-top: 100%;}
 	100% {padding-top: 0px;}
 }
+
+//媒体查询, 适应不同宽度
+@media screen and (max-width: $_maxWidth) {
+  .card-box{
+    width: calc(80vw);
+  }
+}
 </style>

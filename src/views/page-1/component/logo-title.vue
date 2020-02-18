@@ -34,12 +34,10 @@ export default {
   width: 40%;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 10%;
-  margin: 20px;
+  margin: auto;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  //background-color: #ccc;
   .bst-img {
     width: 100px;
     height: auto;
@@ -71,6 +69,24 @@ export default {
     font-size: 30px;
     color: #fff;
     text-decoration: underline;
+  }
+}
+
+//媒体查询, 适应不同宽高度
+@media screen and (max-width: $_maxWidth) {
+  .log-title-box{
+    height: calc(60vh) !important;
+    .bst-img {
+      width: 80px;
+      height: auto;
+    }
+    .bst-title{
+      font-size: 60px;
+      line-height: 70px;
+    }
+    .bst-title-en{
+      font-size: 16px;
+    }
   }
 }
 </style>

@@ -12,10 +12,8 @@
 
       <!-- 左边logo和标题 -->
       <div class="el-item-box-logo">
-        <mobile-hide>
-          <img class="bst-logo" src="@/assets/images/BST-Shadom.png" />
-          <div class="bst-title">{{$t('bst.nav-title')}}</div> <!--标题分中英文显示 -->
-        </mobile-hide>
+        <img class="bst-logo" src="@/assets/images/BST-Shadom.png" />
+        <div class="bst-title">{{$t('bst.nav-title')}}</div> <!--标题分中英文显示 -->
       </div>
 
       <!-- 页面(中/英文显示) -->
@@ -40,13 +38,11 @@
 <script>
 import LangPicker from "@/components/lang-picker/index.vue"; //语言选择插件
 import ThemePicker from "@/components/theme-picker/index.vue"; //主题选择插件
-import MobileHide from "@/components/mobile-hide/index.vue"; //移动端会隐藏的组件
 
 export default {
   components: {
     LangPicker,
-    ThemePicker,
-    MobileHide
+    ThemePicker
   },
   props: {
     pageIndex: {
@@ -129,5 +125,11 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
 .el-item-box:hover {
   color: #fff;
   background-color: $nav-bgColor;
+}
+//媒体查询, 适应不同宽高度, 当小于宽度500px是隐藏logo
+@media screen and (max-width: $_maxWidth) {
+  .el-item-box-logo{
+    display: none !important;
+  }
 }
 </style>
