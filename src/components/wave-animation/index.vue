@@ -93,4 +93,20 @@ export default {
   background-size: 50% 120px;
   animation: move_wave 15s linear infinite;
 }
+
+//添加适应宽高度
+@media screen and (max-width: $_maxWidth) {
+  .waveWrapper .waveAnimation .waveWrapperInner{
+    height: calc(10vh) !important;
+  }
+  .waveTop {
+    background-size:50% calc(10vh) !important;
+  }
+  .waveMiddle{
+    background-size:50% calc(8vh) !important;
+  }
+  .waveBottom{
+    background-size:50% calc(10vh) !important;
+  }
+}
 </style>
