@@ -126,10 +126,13 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
   color: #fff;
   background-color: $nav-bgColor;
 }
-//媒体查询, 适应不同宽高度, 当小于宽度500px是隐藏logo
+//媒体查询, 适应不同宽高度, 当小于宽度500px是隐藏logo, 缩小字体
 @media screen and (max-width: $_maxWidth) {
   .el-item-box-logo{
     display: none !important;
+  }
+  .el-menu-item, .el-dropdown{
+    font-size: 15px !important;
   }
 }
 </style>

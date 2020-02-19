@@ -52,7 +52,7 @@
 
 /* 默认下拉菜单文字大小 */
 .el-dropdown{
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /* 默认下拉文字的颜色 */
