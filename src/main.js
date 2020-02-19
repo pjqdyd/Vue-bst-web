@@ -23,7 +23,6 @@ var h = document.documentElement.clientHeight;
 var CHeight = (h<=500)? 500 : (h>=1000? 1000 : h);
 Vue.prototype.$pageHeight = CHeight;
 
-
 new Vue({
   router,
   store,

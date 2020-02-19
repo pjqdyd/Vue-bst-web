@@ -144,7 +144,7 @@ export default {
   #page-one, #page-two, #page-three, #page-four{
     width: 100%;
     //height: 1000px;
-    font-size: 50px;
+    //font-size: 50px;
     color: #fff;
     box-sizing: border-box;
     background-color: $_bgColor;

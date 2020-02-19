@@ -73,7 +73,7 @@ export default {
   .title-box {
     width: 100%;
     height: 80px;
-    color: #000;
+    font-size: 50px;
     text-align: center;
     position: relative;
     .icon-float{

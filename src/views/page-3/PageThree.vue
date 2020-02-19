@@ -3,6 +3,18 @@
   <div>
     <div id="page-three" class="page-three"  :style="{height: $pageHeight+'px' }">
 
+      <!-- 硬件部标题 -->
+      <div class="title-box" :style="{color: $store.state.theme}">
+        {{$t("bst.team-hardware")}}
+      </div>
+
+      <!-- 硬件部卡片 -->
+      <div class="card-row-box">
+        <block v-for="index in 5" :key="index">
+           <hardware-card></hardware-card>
+        </block>
+      </div>
+
     </div>
     <!-- 分割线 -->
     <el-divider content-position="center">3</el-divider>
@@ -10,8 +22,13 @@
 </template>
 
 <script>
+
+import HardwareCard from "./component/hardware-card.vue"; //硬件部信息卡片
+
 export default {
-  components: {},
+  components: {
+    HardwareCard
+  },
   data() {
     return {
     };
@@ -23,4 +40,22 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.page-three{
+  .title-box {
+    width: 100%;
+    height: 80px;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+  }
+  .card-row-box{
+    margin: auto;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 </style>
