@@ -52,7 +52,7 @@ export default {
 <style lang='scss' scoped>
 $shadow-color:  rgba(0, 0, 150, .2);
 .card-box {
-  margin: 0 4% 0 4%;
+  margin: 0 4%;
   box-sizing: border-box;
   opacity: .8;
   .el-card {

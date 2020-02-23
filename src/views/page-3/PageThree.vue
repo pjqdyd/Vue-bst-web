@@ -10,10 +10,13 @@
 
       <!-- 硬件部卡片 -->
       <div class="card-row-box">
-        <block v-for="index in 5" :key="index">
-           <hardware-card></hardware-card>
-        </block>
+        <el-row id="el-row" type="flex" justify="space-around">
+          <el-col span="5" v-for="index in 5" :key="index">
+            <hardware-card></hardware-card>
+          </el-col>
+        </el-row>
       </div>
+
 
     </div>
     <!-- 分割线 -->
@@ -54,8 +57,12 @@ export default {
     overflow-x: auto;
     overflow-y: hidden;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
+  }
+}
+//媒体查询, 适应不同宽度
+@media screen and (max-width: $_maxWidth) {
+  #el-row{
+    width: calc(100vw * 5);
   }
 }
 </style>
