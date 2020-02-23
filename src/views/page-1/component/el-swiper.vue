@@ -5,7 +5,11 @@
 
       <block v-for="(image, index) in swiperList" :key="index">
         <el-carousel-item>
-          <div class="swiper-image" :style="{backgroundImage: 'url(' + image + ')' }" ></div>
+          <!-- 轮播背景图 -->
+          <div class="swiper-image" :style="{backgroundImage: 'url(' + image + ')' }" >
+            <!-- 背景图前的遮罩 -->
+            <div class="swiper-mask" :style="{backgroundColor: maskColor}"></div>
+          </div>
         </el-carousel-item>
       </block>
 
@@ -28,7 +32,12 @@ export default {
   },
   beforeMount() {},
   mounted() {},
-  methods: {}
+  methods: {},
+  computed: {
+    maskColor(){ //遮罩颜色
+      return this.$store.state.theme;
+    }
+  }
 };
 </script>
 
@@ -45,6 +54,11 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    .swiper-mask{
+      width:100%;
+      height:100%;
+      opacity: .2;
+    }
   }
 }
 </style>
