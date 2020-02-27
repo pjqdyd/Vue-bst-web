@@ -135,4 +135,11 @@ $nav-bgColor: rgba($color: $_bgColor, $alpha: 0);
     font-size: 15px !important;
   }
 }
+//媒体查询, 适应不同宽高度, 当宽度大于1920px后固定宽度
+@media screen and (min-width: $_minWidth) {
+  .nav-menu{
+    position: absolute;
+    width: $_minWidth;
+  }
+}
 </style>

@@ -1,8 +1,7 @@
 <!-- 主页 -->
 <template>
-  <div>
+  <div id="bst-home">
     
-
     <!-- 折叠面板 (height:0消除默认样式)-->
     <el-collapse v-model="activeNames" style="border: 0;">
       <el-collapse-item style="height: 0; margin-botttom:0;" name="nav">
@@ -150,4 +149,12 @@ export default {
     background-color: $_bgColor;
   }
 
+
+//媒体查询, 适应不同宽高度, 当宽度大于1920px后固定宽度
+@media screen and (min-width: $_minWidth) {
+  #bst-home{
+    margin: auto;
+    width: $_minWidth;
+  }
+}
 </style>
