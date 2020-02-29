@@ -7,7 +7,7 @@
         {{$t("bst.team-software")}}
         <!-- 浮动图标,移动端隐藏 -->
         <mobile-hide>
-          <div class="icon-float"><icon-float :icon="'&#xe6da;'"></icon-float></div>
+          <div class="icon-float" :style="{color: $store.state.theme}"><icon-float :icon="'&#xe6da;'"></icon-float></div>
         </mobile-hide>
       </div>
       

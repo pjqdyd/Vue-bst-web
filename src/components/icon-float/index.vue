@@ -1,6 +1,6 @@
 <!-- 浮动图标组件 -->
 <template>
-  <div class="iconfont icon-float-box" :style="{color: $store.state.theme}" v-html="icon">
+  <div class="iconfont icon-float-box" v-html="icon">
   </div>
 </template>
 

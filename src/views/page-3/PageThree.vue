@@ -77,8 +77,11 @@ export default {
 }
 //媒体查询, 适应不同宽度
 @media screen and (max-width: $_maxWidth) {
-  #el-row{
+  #el-row{ //给盒子固定宽度,使其中的内容可滚动
     width: calc(100vw * 5);
+  }
+  .water-drop{
+    height: 30px !important;
   }
 }
 </style>
