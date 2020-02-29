@@ -2,6 +2,9 @@
 <template>
   <div>
     <div id="page-three" class="page-three"  :style="{height: $pageHeight+'px' }">
+      
+      <!-- 水滴弧形效果 -->
+      <img class="water-drop" src="@/assets/images/water-drop.png" />
 
       <!-- 硬件部标题 -->
       <div class="title-box" :style="{color: $store.state.theme}">
@@ -16,7 +19,6 @@
           </el-col>
         </el-row>
       </div>
-
 
     </div>
     <!-- 分割线 -->
@@ -44,19 +46,32 @@ export default {
 
 <style lang='scss' scoped>
 .page-three{
+  background-color: #666 !important;
+  border-bottom: calc(30vh) solid #fff;
+  .water-drop{
+    width: 100%;
+    height: 70px;
+    float: left;
+    position: relative;
+    top: 0;
+  }
   .title-box {
     width: 100%;
     height: 80px;
     font-size: 50px;
     text-align: center;
     position: relative;
+    top: 0px;
   }
   .card-row-box{
+    width: 100%;
     margin: auto;
     padding: 20px;
     overflow-x: auto;
     overflow-y: hidden;
     box-sizing: border-box;
+    position: relative;
+    top: 80px;
   }
 }
 //媒体查询, 适应不同宽度
