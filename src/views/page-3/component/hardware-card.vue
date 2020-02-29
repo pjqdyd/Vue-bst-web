@@ -1,7 +1,7 @@
 <!-- 硬件部信息卡片 -->
 <template>
   <div class="card-box">
-    <li :style="{height: $pageHeight*0.6 +'px'}">
+    <li :style="{height: $pageHeight*0.65 +'px'}">
       <div class="card-item" :style="{borderColor: $store.state.theme}"></div>
       <div class="card-shadow" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cfb1f1 100%)'}"></div>
     </li>

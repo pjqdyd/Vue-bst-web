@@ -4,11 +4,15 @@
     <div id="page-three" class="page-three"  :style="[{height: $pageHeight+'px'}, {backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cf7ae2 100%)'}]">
       
       <!-- 水滴弧形效果 -->
-      <img class="water-drop" src="@/assets/images/water-drop.png" />
+      <div>
+        <img class="water-drop" src="@/assets/images/water-drop.png" />
+      </div>
 
       <!-- 硬件部标题 -->
       <div class="title-box">
         {{$t("bst.team-hardware")}}
+        <!-- 浮动图标 -->
+        <div class="icon-float"><icon-float :icon="'&#xe631;'" :size="'60px'"></icon-float></div>
       </div>
 
       <!-- 硬件部卡片 -->
@@ -30,9 +34,12 @@
 
 import HardwareCard from "./component/hardware-card.vue"; //硬件部信息卡片
 
+import IconFloat from "@/components/icon-float/index.vue";   //浮动图标组件
+
 export default {
   components: {
-    HardwareCard
+    HardwareCard,
+    IconFloat
   },
   data() {
     return {
@@ -47,7 +54,7 @@ export default {
 <style lang='scss' scoped>
 .page-three{
   background-color: #666 !important;
-  border-bottom: calc(30vh) solid #fff;
+  border-bottom: calc(25vh) solid #fff;
   .water-drop{
     width: 100%;
     height: 70px;
@@ -62,7 +69,14 @@ export default {
     font-size: 50px;
     text-align: center;
     position: relative;
+    float: left;
     top: 0px;
+    .icon-float{
+      user-select: none;
+      position: relative;
+      top: -75px;
+      right: 30%;
+    }
   }
   .card-row-box{
     width: 100%;
@@ -72,7 +86,7 @@ export default {
     overflow-y: hidden;
     box-sizing: border-box;
     position: relative;
-    top: 80px;
+    top: 0px;
   }
 }
 //媒体查询, 适应不同宽度

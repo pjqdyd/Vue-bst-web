@@ -1,6 +1,6 @@
 <!-- 浮动图标组件 -->
 <template>
-  <div class="iconfont icon-float-box" v-html="icon">
+  <div class="iconfont icon-float-box" v-html="icon" :style="{fontSize: size}">
   </div>
 </template>
 
@@ -10,6 +10,10 @@ export default {
       icon: {
           type: String,
           default: ""
+      },
+      size: {
+        type: String,
+        default: "20px"
       }
   },
   components: {},
@@ -23,7 +27,6 @@ export default {
 
 <style lang='scss' scoped>
 .icon-float-box {
-  font-size: 20px;
   animation: triangle-jump 2s infinite;
   @keyframes triangle-jump {
     0%,
