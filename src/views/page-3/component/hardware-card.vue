@@ -3,7 +3,7 @@
   <div class="card-box">
     <li :style="{height: $pageHeight*0.6 +'px'}">
       <div class="card-item" :style="{borderColor: $store.state.theme}"></div>
-      <div class="card-shadow" :style="{backgroundImage: 'linear-gradient(135deg, #fff 10%,' + $store.state.theme + ' 100%)'}"></div>
+      <div class="card-shadow" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cfb1f1 100%)'}"></div>
     </li>
   </div>
 </template>

@@ -1,13 +1,13 @@
 <!-- 第3页 -->
 <template>
   <div>
-    <div id="page-three" class="page-three"  :style="{height: $pageHeight+'px' }">
+    <div id="page-three" class="page-three"  :style="[{height: $pageHeight+'px'}, {backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cf7ae2 100%)'}]">
       
       <!-- 水滴弧形效果 -->
       <img class="water-drop" src="@/assets/images/water-drop.png" />
 
       <!-- 硬件部标题 -->
-      <div class="title-box" :style="{color: $store.state.theme}">
+      <div class="title-box">
         {{$t("bst.team-hardware")}}
       </div>
 
@@ -58,6 +58,7 @@ export default {
   .title-box {
     width: 100%;
     height: 80px;
+    color: #fff;
     font-size: 50px;
     text-align: center;
     position: relative;
