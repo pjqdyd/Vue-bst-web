@@ -5,7 +5,7 @@
       <!-- 图片背景 -->
       <div class="image-box" :style="[
                 {height: $pageHeight*0.7 +'px'},
-                {paddingTop: $pageHeight*0.6 +'px'},
+                {paddingTop: $pageHeight*0.7 - 70 + 'px'},
                 {backgroundImage: 'url(' + image + ')' }
         ]">
         <!-- 文字内容盒子 -->
