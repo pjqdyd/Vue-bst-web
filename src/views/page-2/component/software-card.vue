@@ -71,6 +71,7 @@ $shadow-color:  rgba(0, 0, 150, .2);
   .image-box {
     width: 100%;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
     .text-box{
       color: #fff;
