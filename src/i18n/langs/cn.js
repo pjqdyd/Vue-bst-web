@@ -52,6 +52,33 @@ const cn = {
                 title: "后端开发",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             }
+        ],
+        'hardware-info-list': [
+            {
+                icon: "&#xe603;",
+                title: "Web前端",
+                contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
+            },
+            {
+                icon: "&#xe668;",
+                title: "UI设计",
+                contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
+            },
+            {
+                icon: "&#xe642;",
+                title: "产品设计",
+                contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
+            },
+            {
+                icon: "&#xe6cd;",
+                title: "Android/ios移动端",
+                contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
+            },
+            {
+                icon: "&#xe7de;",
+                title: "后端开发",
+                contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
+            }
         ]
     },
     button:{

@@ -1,11 +1,20 @@
 <!-- 硬件部信息卡片 -->
 <template>
   <div class="card-box">
-    <li :style="{height: $pageHeight*0.65 +'px'}">
+    <li :style="{height: $pageHeight*0.7 +'px'}">
+      <!-- 卡片 -->
       <div class="card-item" :style="{borderColor: $store.state.theme}">
-        <div class="card-bg-text">这里是文字</div>
-        <div class="card-icon-title" :style="{borderColor: $store.state.theme}">文字标题</div>
+        <!-- 文字内容 -->
+        <div class="card-bg-text" :style="{backgroundImage: 'url(' + image + ')'}">
+          <div class="text-contant">{{text.contant}}</div>
+        </div>
+        <!-- 标题图标 -->
+        <div class="card-icon-title" :style="{borderColor: $store.state.theme}">
+          <i class="iconfont" v-html="text.icon"></i>
+          {{text.title}}
+        </div>
       </div>
+      <!-- 卡片阴影 -->
       <div class="card-shadow" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cfb1f1 100%)'}"></div>
     </li>
   </div>
@@ -13,6 +22,16 @@
 
 <script>
 export default {
+  props: {
+    image: { //背景图片
+      type: Object,
+      default: null
+    },
+    text: { //文字内容
+      type: Object,
+      default: null
+    }
+  },
   components: {},
   data() {
     return {};
@@ -24,38 +43,41 @@ export default {
 
 <style lang='scss' scoped>
   li {
-    width: calc(16vw); 
+    width: calc(17vw); 
     display: inline-block;
-    margin: 0 4%;
+    //margin: 0 2%;
     list-style: none;
     position: relative;
     border: 0;
-    opacity: .8;
-    box-sizing: border-box;
+    opacity: .9;
     .card-item {
-      border: solid .9px;
+      border: solid .8px;
       height: 100%;
       text-align: center;
       background: #fff;
       border-radius: 8px;
       position: relative;
       z-index: 10;
-      box-sizing: border-box;
       .card-bg-text{
         width: 100%;
         height: calc(100% - 60px);
         border-radius: 8px 8px 0 0;
-        background-image: url("~@/assets/images/software/2.jpg");
         background-size: cover;
-        
+        padding: 15px;
+        .text-contant{
+          text-indent: 2em;
+          font-size: 17px;
+        }
       }
       .card-icon-title{
-        font-size: 20px;
+        font-size: 24px;
         width: 100%;
         height: 60px;
         border-top: solid 1px;
         line-height: 60px;
         color: #000;
+        text-align: left;
+        padding-left: 15px;
       }
     }
     .card-shadow { //卡片的阴影

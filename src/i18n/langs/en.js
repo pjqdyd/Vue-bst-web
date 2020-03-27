@@ -56,6 +56,33 @@ const en = {
                 title: "BackEnd",
                 contant: "english"
             }
+        ],
+        'hardware-info-list': [
+            {
+                icon: "&#xe603;",
+                title: "Web FrontEnd",
+                contant: "english"
+            },
+            {
+                icon: "&#xe668;",
+                title: "UI Design",
+                contant: "english"
+            },
+            {
+                icon: "&#xe642;",
+                title: "Product Design",
+                contant: "english"
+            },
+            {
+                icon: "&#xe6cd;",
+                title: "Android/ios",
+                contant: "english"
+            },
+            {
+                icon: "&#xe7de;",
+                title: "BackEnd",
+                contant: "english"
+            }
         ]
     },
     button:{
