@@ -53,7 +53,6 @@ export default {
 $shadow-color:  rgba(0, 0, 150, .2);
 .card-box {
   margin: 0 4%;
-  box-sizing: border-box;
   opacity: .9;
   .el-card {
     border: 0;
@@ -72,7 +71,6 @@ $shadow-color:  rgba(0, 0, 150, .2);
     width: 100%;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
     .text-box{
       color: #fff;
       position: relative;
@@ -84,13 +82,11 @@ $shadow-color:  rgba(0, 0, 150, .2);
         white-space :nowrap;
         overflow : hidden;
         text-overflow: ellipsis;
-        box-sizing: border-box;
       }
       .text-contant{
         text-indent: 2em;
         font-size: 17px;
         margin: 15px;
-        box-sizing: border-box;
       }
     }
   }

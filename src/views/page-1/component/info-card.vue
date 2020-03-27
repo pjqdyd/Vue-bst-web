@@ -32,7 +32,6 @@ export default {
   margin-right: 10%;
   overflow-y: auto;
   border-radius: 30px;
-  box-sizing: border-box;
   box-shadow: 0  1px 10px rgba(0, 0, 150, .2);
   background-color: rgba($color: #fff, $alpha: 0.2);
   .bst-title{

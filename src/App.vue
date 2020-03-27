@@ -37,6 +37,9 @@
   text-align: center;
   color: $_fontColor;
 }
+div{
+  box-sizing: border-box;
+}
 /* 默认文字颜色 */
 .default-text-color{
   color: $_fontColor;

@@ -90,7 +90,6 @@ export default {
     padding: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    box-sizing: border-box;
   }
   .bottom-text{
     line-height: 60px;

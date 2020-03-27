@@ -33,7 +33,6 @@ export default {
 .log-title-box{
   width: 40%;
   height: 100%;
-  box-sizing: border-box;
   margin: auto;
   margin-top: 10%;
   display: flex;
