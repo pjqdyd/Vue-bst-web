@@ -45,7 +45,7 @@ export default {
   li {
     width: calc(17vw); 
     display: inline-block;
-    //margin: 0 2%;
+    margin: 0 4%;
     list-style: none;
     position: relative;
     border: 0;
@@ -81,6 +81,9 @@ export default {
         color: #000;
         text-align: left;
         padding-left: 15px;
+        white-space :nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
       }
     }
     .card-shadow { //卡片的阴影
