@@ -6,7 +6,7 @@
       <div class="card-item" :style="{borderColor: $store.state.theme}">
         <!-- 文字内容 -->
         <div class="card-bg-text" :style="{backgroundImage: 'url(' + image + ')'}">
-          <div class="text-contant">{{text.contant}}</div>
+          <div class="text-contant" :style="{backgroundColor: $store.state.theme}">{{text.contant}}</div>
         </div>
         <!-- 标题图标 -->
         <div class="card-icon-title" :style="{borderColor: $store.state.theme}">
@@ -63,10 +63,13 @@ export default {
         height: calc(100% - 60px);
         border-radius: 8px 8px 0 0;
         background-size: cover;
-        padding: 15px;
-        .text-contant{
+        .text-contant {
+          width: 100%;
+          height: 100%;
+          padding: 15px;
           text-indent: 2em;
           font-size: 17px;
+          opacity: 0;
         }
       }
       .card-icon-title{
@@ -91,6 +94,16 @@ export default {
       opacity: .6;
     }
   }
+.text-contant:hover{ //动画显示文本
+    animation: showText .6s 1 forwards;
+    -webkit-animation: showText .6s 1 forwards;
+}
+
+//减少透明度, 使文本显示出来
+@keyframes showText {
+	0% {opacity: 0;}
+	100% {opacity: .7;}
+}
 //媒体查询, 适应不同宽度
 @media screen and (max-width: $_maxWidth) {
   .card-box, li, .card-item{
