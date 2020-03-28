@@ -55,28 +55,28 @@ const cn = {
         ],
         'hardware-info-list': [
             {
-                icon: "&#xe603;",
-                title: "Web前端",
+                icon: "&#xe62d;",
+                title: "机械",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             },
             {
-                icon: "&#xe668;",
-                title: "UI设计",
+                icon: "&#xecc9;",
+                title: "电子",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             },
             {
-                icon: "&#xe642;",
-                title: "产品设计",
+                icon: "&#xe79a;",
+                title: "智能车",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             },
             {
-                icon: "&#xe6cd;",
-                title: "Android/ios移动端",
+                icon: "&#xe6ef;",
+                title: "物联网IoT",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             },
             {
-                icon: "&#xe7de;",
-                title: "后端开发",
+                icon: "&#xe662;",
+                title: "智能制造",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             }
         ]

@@ -59,28 +59,28 @@ const en = {
         ],
         'hardware-info-list': [
             {
-                icon: "&#xe603;",
-                title: "Web FrontEnd",
+                icon: "&#xe62d;",
+                title: "Electronic",
                 contant: "english"
             },
             {
-                icon: "&#xe668;",
-                title: "UI Design",
+                icon: "&#xecc9;",
+                title: "Mechanical",
                 contant: "english"
             },
             {
-                icon: "&#xe642;",
-                title: "Product Design",
+                icon: "&#xe79a;",
+                title: "Smart Car",
                 contant: "english"
             },
             {
-                icon: "&#xe6cd;",
-                title: "Android/ios",
+                icon: "&#xe6ef;",
+                title: "Internet Of Things",
                 contant: "english"
             },
             {
-                icon: "&#xe7de;",
-                title: "BackEnd",
+                icon: "&#xe662;",
+                title: "Intelligent Manufacturing",
                 contant: "english"
             }
         ]
