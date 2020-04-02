@@ -74,7 +74,7 @@ $shadow-color:  rgba(0, 0, 150, .2);
     .text-box{
       color: #fff;
       position: relative;
-      opacity: .8;
+      opacity: .9;
       .text-title{
         font-size: 30px;
         text-align: left;
