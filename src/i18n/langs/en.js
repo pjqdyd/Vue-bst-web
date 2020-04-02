@@ -60,16 +60,16 @@ const en = {
         'hardware-info-list': [
             {
                 icon: "&#xe62d;",
-                title: "Electronic",
-                contant: "english"
-            },
-            {
-                icon: "&#xecc9;",
                 title: "Mechanical",
                 contant: "english"
             },
             {
-                icon: "&#xe662;",
+                icon: "&#xecc9;",
+                title: "Electronic",
+                contant: "english"
+            },
+            {
+                icon: "&#xe602;",
                 title: "Arduino/Raspberry-Pi",
                 contant: "english"
             },

@@ -35,11 +35,11 @@
 import HardwareCard from "./component/hardware-card.vue"; //硬件部信息卡片
 import IconFloat from "@/components/icon-float/index.vue";   //浮动图标组件
 
-import cardBG1 from "@/assets/images/software/1.jpg"; //卡片背景
-import cardBG2 from "@/assets/images/software/2.jpg";
-import cardBG3 from "@/assets/images/software/3.jpg";
-import cardBG4 from "@/assets/images/software/4.jpg";
-import cardBG5 from "@/assets/images/software/5.jpg";
+import cardBG1 from "@/assets/images/hardware/1.jpg"; //卡片背景
+import cardBG2 from "@/assets/images/hardware/2.jpg";
+import cardBG3 from "@/assets/images/hardware/3.jpg";
+import cardBG4 from "@/assets/images/hardware/4.jpg";
+import cardBG5 from "@/assets/images/hardware/5.jpg";
 
 export default {
   components: {

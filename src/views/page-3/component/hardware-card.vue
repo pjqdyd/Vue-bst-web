@@ -105,7 +105,7 @@ export default {
 //减少透明度, 使文本显示出来
 @keyframes showText {
 	0% {opacity: 0;}
-	100% {opacity: .7;}
+	100% {opacity: .8;}
 }
 //媒体查询, 适应不同宽度
 @media screen and (max-width: $_maxWidth) {
