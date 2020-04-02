@@ -1,6 +1,6 @@
 <!-- Mac 风格的控制台 -->
 <template>
-  <div class="window-box">
+  <div class="window-box" >
     <div class="top-bar">
       <span class="close btn"></span>
       <span class="min btn"></span>
@@ -24,8 +24,8 @@ export default {
 <style lang='scss' scoped>
 .window-box {
   margin: auto;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   float: right;
   position: relative;
   background-color: #232323;
