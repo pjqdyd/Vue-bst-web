@@ -5,7 +5,7 @@
       <!-- 图片背景 -->
       <div class="image-box" :style="[
                 {height: $pageHeight*0.7 +'px'},
-                {paddingTop: $pageHeight*0.7 - 70 + 'px'},
+                {paddingTop: $pageHeight*0.7 - 60 + 'px'},
                 {backgroundImage: 'url(' + image + ')' }
         ]">
         <!-- 文字内容盒子 -->
@@ -76,9 +76,9 @@ $shadow-color:  rgba(0, 0, 150, .2);
       position: relative;
       opacity: .9;
       .text-title{
-        font-size: 30px;
+        font-size: 24px;
         text-align: left;
-        padding:  15px;
+        padding:  10px;
         white-space :nowrap;
         overflow : hidden;
         text-overflow: ellipsis;
