@@ -69,6 +69,11 @@ const en = {
                 contant: "english"
             },
             {
+                icon: "&#xe662;",
+                title: "Arduino/Raspberry-Pi",
+                contant: "english"
+            },
+            {
                 icon: "&#xe79a;",
                 title: "Smart Car",
                 contant: "english"
@@ -76,11 +81,6 @@ const en = {
             {
                 icon: "&#xe6ef;",
                 title: "Internet Of Things",
-                contant: "english"
-            },
-            {
-                icon: "&#xe662;",
-                title: "Intelligent Manufacturing",
                 contant: "english"
             }
         ]
