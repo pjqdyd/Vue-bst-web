@@ -9,7 +9,7 @@
       </div>
 
       <!-- 底部信息盒子 -->
-      <div class="bottom-info-box">
+      <div class="bottom-info-box" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cf7ae2 100%)'}">
           <el-link class="bottom-info-text" href="https://www.baidu.com"  type="info" target="_blank">© 2019-2020 蓝色技术工作室</el-link>
           <el-link class="bottom-info-text" href="https://www.baidu.com"  type="info" target="_blank">&nbsp;江西科技学院</el-link>
       </div> 

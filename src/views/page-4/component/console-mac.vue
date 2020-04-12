@@ -1,12 +1,22 @@
 <!-- Mac 风格的控制台 -->
 <template>
   <div class="window-box" >
+    <!-- 顶部选项卡 -->
     <div class="top-bar">
       <span class="close btn"></span>
       <span class="min btn"></span>
       <span class="max btn"></span>
     </div>
-    <div class="text">这是一段文字</div>
+
+    <div class="content">
+      <!-- 轮播图盒子 -->
+      <el-carousel class="swiper-box" :height="$pageHeight*0.6 + 'px'"> 
+        <el-carousel-item v-for="item in 4" :key="item">
+         <div class="swiper-item">{{item}}</div>
+        </el-carousel-item>
+    </el-carousel>
+  </div>
+
   </div>
 </template>
 
@@ -60,14 +70,20 @@ export default {
     }
   }
 
-  .text {
+  .content {
     height: 100%;
-    padding: 45px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: left;
-    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    .swiper-box{
+      width: 80%;
+      margin: auto;
+      margin-top: 50px;
+      background-color: #fdbc40;
+      .swiper-item{
+       width: 100%;
+       height: 100%;
+      }
+    }
   }
 }
 </style>
