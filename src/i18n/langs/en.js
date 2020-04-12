@@ -83,6 +83,44 @@ const en = {
                 title: "Internet Of Things",
                 contant: "english"
             }
+        ],
+        "promote-info-list": [
+            {
+                icon_name: "bilibili",
+                name: "Blue",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Green",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Blue",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Green",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Blue",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Green",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "Blue",
+                url: "www.baidu.com"
+            }
+            
         ]
     },
     button:{

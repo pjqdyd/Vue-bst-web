@@ -79,8 +79,61 @@ const cn = {
                 title: "物联网IoT",
                 contant: "前端计划计划爱喝酒按计划可能就爱上了回家啦阿里法律环境, 就flak就阿萨."
             }
+        ],
+        "promote-info-list": [
+            {
+                icon_name: "bilibili",
+                name: "Blue",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "蓝色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "蓝色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "蓝色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "蓝色",
+                url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
+            }
             
         ]
+
     },
     button:{
         'delete': '删除',
