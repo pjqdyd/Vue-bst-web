@@ -10,8 +10,8 @@
 
     <div id="promote-swiper-content" class="content">
 
-      <!-- 轮播图盒子 -->
-      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 'px'" indicator-position="outside"> 
+      <!-- 轮播图盒子 高度是父元素的80%再加上30-->
+      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 30 + 'px'" indicator-position="outside"> 
         <!-- 推荐的内容分页 -->
         <el-carousel-item v-for="(promotePage, index) in promotePages" :key="index" class="swiper-page"> 
           <!-- 每页的推荐内容集合, 宽度根据子元素的数量决定 -->
@@ -126,12 +126,12 @@ export default {
       align-content: center;
       .swiper-page{
         display: flex;
-        direction: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         .swiper-item{
           //width: 100%;
-          height: 360px;
+          height: 440px;
           margin: auto;
           overflow: hidden;
           //display: grid; //网格布局
@@ -142,9 +142,8 @@ export default {
           .promote-item{ //推广信息盒子
             float: left;
             width: 200px;
-            height: 180px;
-            border: cadetblue 1px solid;
-            background-color:#413838;
+            height: 220px;
+            background-color:#efeeee;
           }
         }
       }
