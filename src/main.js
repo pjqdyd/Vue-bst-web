@@ -20,7 +20,7 @@ Vue.prototype.$userRequest = http.userRequest;
 
 //挂载全局的页面高度(保证单页的高度至少在500-1000之间)
 var h = document.documentElement.clientHeight;
-var CHeight = (h<=500)? 500 : (h>=1000? 1000 : h);
+var CHeight = (h<=500)? 500 : (h>=1080? 1080 : h);
 Vue.prototype.$pageHeight = CHeight;
 
 new Vue({

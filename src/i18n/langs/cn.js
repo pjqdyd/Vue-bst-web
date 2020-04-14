@@ -130,6 +130,11 @@ const cn = {
                 icon_name: "bilibili",
                 name: "绿色",
                 url: "www.baidu.com"
+            },
+            {
+                icon_name: "bilibili",
+                name: "绿色",
+                url: "www.baidu.com"
             }
             
         ]

@@ -62,18 +62,17 @@ export default {
     console.log(this.$pageHeight);
     this.getPageDistance();
     this.getPulleyTopDistance();
+    this.getClientWidth();
   },
   methods: {
-    //拿到每个page页面距窗体顶部的距离
-    getPageDistance() {
+    getPageDistance() { //拿到每个page页面距窗体顶部的距离
       this.pageOne = document.getElementById("page-one").offsetTop;
       this.pageTwo = document.getElementById("page-two").offsetTop;
       this.pageThree = document.getElementById("page-three").offsetTop;
       this.pageFour = document.getElementById("page-four").offsetTop; 
     },
 
-    // 返回滑轮距顶部的距离
-    getPulleyTopDistance() {
+    getPulleyTopDistance() { //返回滑轮距顶部的距离
       var that = this;
       var waiting = false; //用于优化监听scroll, 300ms执行一次
        
@@ -85,15 +84,14 @@ export default {
           distance - that.scrolltop > 0 ? that.activeNames = [''] : that.activeNames = ['nav'];
           //赋值修改页面距顶部的距离
           that.scrolltop = distance; 
-          setTimeout(function () { //优化监听scroll, 300ms执行一次
+          setTimeout(function () { //优化监听scroll, 至少150ms执行一次
             waiting = false;
           }, 150);
       };
 
     },
 
-    //选项改变的回调函数, 设置滚动到对应的page
-    handSelectChange(index) {
+    handSelectChange(index) { //选项改变的回调函数, 设置滚动到对应的page
       switch (index) {
         case "1":
           this.pulleyRoll(this.pageOne);
@@ -110,13 +108,24 @@ export default {
       }
     },
 
-     // top是page距窗体顶部的距离
-    pulleyRoll(top){
-      //设置页面滚动到的的位置
-      window.scrollTo({ 
+    pulleyRoll(top){ // top是page距窗体顶部的距离
+      window.scrollTo({ //设置页面滚动到的的位置
         top: top, 
         behavior: "smooth" 
       });
+    },
+
+    getClientWidth(){ //获取并保存窗口宽度
+      var that = this;
+      var waiting = false; //用于优化监听scroll, 300ms执行一次
+      window.onresize = () => { // 监听窗口大小
+          if (waiting) {return;}
+          waiting = true;
+          that.$store.commit("setClientWidth", document.body.clientWidth); //保存更新窗口宽度
+          setTimeout(function () { //优化监听scroll, 至少500ms执行一次
+            waiting = false;
+          }, 500);
+      }
     }
   },
   watch: {
