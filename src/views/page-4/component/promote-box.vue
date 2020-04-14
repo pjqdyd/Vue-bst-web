@@ -36,18 +36,18 @@ export default {
     width: 100%;
     height: 100%;
     .promote-icon{
-        width: 80%;
-        height: 80%;
+        width: 85%;
+        height: 85%;
         margin: auto;
         border-radius: 10px;
         img{
-            width: 80%;
+            width: 85%;
             height: auto;
         }
     }
     .promote-name{
-        width: 80%;
-        height: 20%;
+        width: 85%;
+        height: 15%;
         margin: auto;
     }
 }

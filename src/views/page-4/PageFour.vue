@@ -4,7 +4,7 @@
      <div id="page-four" class="page-four"  :style="{height: $pageHeight+'px' }">
 
       <!-- Mac风格控制窗 -->
-      <div class="mac-box" :style="{height: $pageHeight - 160  + 'px'}">
+      <div class="mac-box" :style="{height: $pageHeight - 90  + 'px'}">
         <console-mac></console-mac>
       </div>
 

@@ -11,7 +11,7 @@
     <div id="promote-swiper-content" class="content">
 
       <!-- 轮播图盒子 -->
-      <el-carousel class="swiper-box" :height="$pageHeight*0.6 + 'px'" indicator-position="outside"> 
+      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 'px'" indicator-position="outside"> 
         <!-- 推荐的内容分页 -->
         <el-carousel-item v-for="(promotePage, index) in promotePages" :key="index" class="swiper-page"> 
           <!-- 每页的推荐内容集合, 宽度根据子元素的数量决定 -->
@@ -91,7 +91,6 @@ export default {
   float: right;
   position: relative;
   background-color: #232323;
-  box-sizing: border-box;
   border-radius: 5px 5px 0 0;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   .top-bar {
@@ -99,7 +98,6 @@ export default {
     height: 25px;
     background: #f9f9f3;
     padding: 5px;
-    box-sizing: border-box;
     overflow: hidden;
     float: left;
     border-radius: 5px 5px 0 0;
@@ -123,7 +121,7 @@ export default {
     .swiper-box{
       width: 80%;
       margin: auto;
-      margin-top: 60px;
+      margin-top: 30px;
       background-color: #fdbc40;
       align-content: center;
       .swiper-page{
@@ -133,7 +131,7 @@ export default {
         align-items: center;
         .swiper-item{
           //width: 100%;
-          height: 400px;
+          height: 360px;
           margin: auto;
           overflow: hidden;
           //display: grid; //网格布局
@@ -144,7 +142,7 @@ export default {
           .promote-item{ //推广信息盒子
             float: left;
             width: 200px;
-            height: 200px;
+            height: 180px;
             border: cadetblue 1px solid;
             background-color:#413838;
           }
