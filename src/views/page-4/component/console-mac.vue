@@ -11,7 +11,7 @@
     <div class="content">
 
       <!-- 轮播图盒子 高度是父元素的80%再加上5-->
-      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 5 + 'px'" indicator-position="outside"> 
+      <el-carousel autoplay=false interval=-1 class="swiper-box" :height="($pageHeight-90)*0.8 + 5 + 'px'" indicator-position="outside"> 
         <!-- 推荐的内容分页 -->
         <el-carousel-item v-for="(promotePage, index) in promotePages" :key="index" class="swiper-page"> 
           <!-- 每页的推荐内容集合, 宽度根据子元素的数量决定, +20表示阴影的宽度 -->
@@ -34,6 +34,13 @@
 import PromoteBox from "./promote-box.vue"; //导入推广信息盒子组件
 
 import Bilibili_Icon from "@/assets/images/promote/bilibili.png"; //图标
+import Github_Icon from "@/assets/images/promote/github.png";
+import Jianshu_Icon from "@/assets/images/promote/jianshu.png";
+import Weibo_Icon from "@/assets/images/promote/weibo.png";
+import Bst_Icon from "@/assets/images/promote/bst.png";
+import Wechat_Icon from "@/assets/images/promote/wechat.png";
+import Huntercat_Icon from "@/assets/images/promote/huntercat.png";
+
 
 export default {
   components: {
@@ -42,7 +49,13 @@ export default {
   data() {
     return {
       promoteIconList: { //推广图片图标集合
-        "bilibili": Bilibili_Icon
+        "bilibili": Bilibili_Icon,
+        "github": Github_Icon,
+        "jianshu": Jianshu_Icon,
+        "weibo": Weibo_Icon,
+        "bst": Bst_Icon,
+        "wechat": Wechat_Icon,
+        "huntercat": Huntercat_Icon
       },
       promoteItemNum: 8, //单页的推广图标数量
       prometeItemWidth: 200 //单个推广图标的宽度

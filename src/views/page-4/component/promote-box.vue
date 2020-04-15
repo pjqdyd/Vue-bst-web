@@ -1,6 +1,6 @@
 <!-- 推荐信息盒子 -->
 <template>
-  <div class="promote-box">
+  <div class="promote-box" @click="handleClick()">
       <!-- 推广图标 -->
       <div class="promote-icon"> 
           <img :src="promoteIcon">
@@ -27,7 +27,11 @@ export default {
     return {};
   },
   mounted() {},
-  methods: {}
+  methods: {
+      handleClick(){ //点击图标后, 打开链接
+        window.open(this.promoteData.url); 
+      }
+  }
 }
 </script>
 
@@ -50,6 +54,7 @@ export default {
         img{
             width: 80%;
             height: auto;
+            border-radius: 20px;
         }
     }
     .promote-name{
