@@ -15,9 +15,9 @@
           <el-link class="bottom-info-text" href="https://www.baidu.com"  type="info" target="_blank">&nbsp;江西科技学院</el-link>
           <mobile-hide>
             <!-- 浮动图标1 -->
-            <div class="icon-float1"><icon-float :icon="'&#xe630;'" :size="'60px'"></icon-float></div>
+            <div class="icon-float1" :style="{color: $store.state.theme}"><icon-float :icon="'&#xe630;'" :size="'60px'"></icon-float></div>
             <!-- 浮动图标2 -->
-            <div class="icon-float2"><icon-float :icon="'&#xe631;'" :size="'60px'"></icon-float></div>
+            <div class="icon-float2" :style="{color: $store.state.theme}"><icon-float :icon="'&#xe631;'" :size="'60px'"></icon-float></div>
           </mobile-hide>
       </div> 
      </div>
@@ -80,14 +80,12 @@ export default {
       position: absolute;
       left: 15%;
       bottom: 150px;
-      color: #4f4f4f;
       user-select: none;
     }
     .icon-float2{
       position: absolute;
       right: 15%;
       bottom: 550px;
-      color: #4f4f4f;
       user-select: none;
     }
   }
