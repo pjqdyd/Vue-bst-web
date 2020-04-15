@@ -40,7 +40,7 @@ export default {
         height: 80%;
         margin: auto;
         box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
-                    -18px -18px 30px rgba(255, 255, 255, 1);
+                    -18px -12px 30px rgba(255, 255, 255, 1);
         border-radius: 10px;
         background-color: #efeeee;
         transition: box-shadow .2s ease-out;
@@ -54,11 +54,11 @@ export default {
     }
     .promote-name{
         width: 80%;
-        height: 40px;
+        height: 20%;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 32px;
         margin: auto;
-        color: slategrey;
+        color: rgb(16, 17, 19);
     }
 }
 .promote-icon img{

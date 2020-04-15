@@ -65,4 +65,9 @@ div{
 .el-dropdown-link:hover{
   color: #fff;
 }
+
+// 默认导航指示条颜色
+.el-carousel__button{
+    background-color: #000 !important;
+}
 </style>

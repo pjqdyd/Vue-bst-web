@@ -8,14 +8,14 @@
       <span class="max btn"></span>
     </div>
 
-    <div id="promote-swiper-content" class="content">
+    <div class="content">
 
-      <!-- 轮播图盒子 高度是父元素的80%再加上30-->
-      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 30 + 'px'" indicator-position="outside"> 
+      <!-- 轮播图盒子 高度是父元素的80%再加上5-->
+      <el-carousel class="swiper-box" :height="($pageHeight-90)*0.8 + 5 + 'px'" indicator-position="outside"> 
         <!-- 推荐的内容分页 -->
         <el-carousel-item v-for="(promotePage, index) in promotePages" :key="index" class="swiper-page"> 
-          <!-- 每页的推荐内容集合, 宽度根据子元素的数量决定 -->
-          <div class="swiper-item" :style="{width: Math.ceil(promotePage.length / 2) * 200 + 'px'}">
+          <!-- 每页的推荐内容集合, 宽度根据子元素的数量决定, +20表示阴影的宽度 -->
+          <div class="swiper-item" :style="{width: Math.ceil(promotePage.length / 2) * 200 + 20 + 'px'}">
             <div class="promote-item" v-for="(promoteItem, i) in promotePage" :key="i">
                 <!-- 推广信息盒子 -->
                 <promote-box :promoteData="promoteItem" :promoteIcon="promoteIconList[promoteItem.icon_name]"></promote-box>
@@ -90,13 +90,13 @@ export default {
   height: 100%;
   float: right;
   position: relative;
-  background-color: #232323;
+  background-color:  #f9f9f9;
   border-radius: 5px 5px 0 0;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   .top-bar {
     width: 100%;
     height: 25px;
-    background: #f9f9f3;
+    background:#232323;
     padding: 5px;
     overflow: hidden;
     float: left;
@@ -115,14 +115,13 @@ export default {
   }
 
   .content {
-    height: 100%;
+    height: calc(100% - 25px);
     width: 100%;
-    position: absolute;
     .swiper-box{
       width: 80%;
       margin: auto;
       margin-top: 30px;
-      background-color: #fdbc40;
+      //background-color: #f9f9f9;
       align-content: center;
       .swiper-page{
         display: flex;
@@ -131,7 +130,7 @@ export default {
         align-items: center;
         .swiper-item{
           //width: 100%;
-          height: 440px;
+          height: 400px;
           margin: auto;
           overflow: hidden;
           //display: grid; //网格布局
@@ -142,8 +141,8 @@ export default {
           .promote-item{ //推广信息盒子
             float: left;
             width: 200px;
-            height: 220px;
-            background-color:#efeeee;
+            height: 200px;
+            //background-color:#efeeee;
           }
         }
       }

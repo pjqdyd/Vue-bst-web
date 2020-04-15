@@ -44,7 +44,7 @@ export default {
   .mac-box{
     width: 80%;
     margin: auto;
-    opacity: .9;
+    opacity: .8;
     display: flex;
     flex-direction: column;
     justify-content: center;
