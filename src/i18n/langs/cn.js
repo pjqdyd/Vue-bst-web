@@ -112,25 +112,35 @@ const cn = {
                 url: "https://upload-images.jianshu.io/upload_images/14511997-fd3a87454e9cfde7.jpg"
             },
             {
-                icon_name: "bilibili",
-                name: "蓝色",
-                url: "www.baidu.com"
+                icon_name: "bst",
+                name: "蓝色技术工作室官网",
+                url: "https://lansejishu.com/"
+            },
+            {
+                icon_name: "github",
+                name: "Github主页",
+                url: "https://github.com/JXUT-BST"
             },
             {
                 icon_name: "bilibili",
-                name: "绿色",
-                url: "www.baidu.com"
+                name: "Bilibili账号",
+                url: "https://space.bilibili.com/427691013"
             },
             {
-                icon_name: "bilibili",
-                name: "绿色",
-                url: "www.baidu.com"
+                icon_name: "weibo",
+                name: "官方微博",
+                url: "https://weibo.com/lsjsgzs"
             },
             {
-                icon_name: "bilibili",
-                name: "绿色",
-                url: "www.baidu.com"
-            }
+                icon_name: "jianshu",
+                name: "简书",
+                url: "https://www.jianshu.com/c/c4a357e1ade3"
+            },
+            {
+                icon_name: "wechat",
+                name: "微信公众号",
+                url: "https://upload-images.jianshu.io/upload_images/14511997-fd3a87454e9cfde7.jpg"
+            },
             
         ],
         "bottom-info":{

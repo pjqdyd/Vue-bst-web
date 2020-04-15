@@ -86,40 +86,66 @@ const en = {
         ],
         "promote-info-list": [
             {
-                icon_name: "bilibili",
-                name: "Blue",
-                url: "www.baidu.com"
+                icon_name: "bst",
+                name: "BST Official Website",
+                url: "https://lansejishu.com/"
+            },
+            {
+                icon_name: "github",
+                name: "Github Page",
+                url: "https://github.com/JXUT-BST"
             },
             {
                 icon_name: "bilibili",
-                name: "Green",
-                url: "www.baidu.com"
+                name: "Bilibili UP",
+                url: "https://space.bilibili.com/427691013"
+            },
+            {
+                icon_name: "weibo",
+                name: "WeiBo",
+                url: "https://weibo.com/lsjsgzs"
+            },
+            {
+                icon_name: "jianshu",
+                name: "JianShu",
+                url: "https://www.jianshu.com/c/c4a357e1ade3"
+            },
+            {
+                icon_name: "wechat",
+                name: "WeChat",
+                url: "https://upload-images.jianshu.io/upload_images/14511997-fd3a87454e9cfde7.jpg"
+            },
+            {
+                icon_name: "bst",
+                name: "BST Official Website",
+                url: "https://lansejishu.com/"
+            },
+            {
+                icon_name: "github",
+                name: "Github Page",
+                url: "https://github.com/JXUT-BST"
             },
             {
                 icon_name: "bilibili",
-                name: "Blue",
-                url: "www.baidu.com"
+                name: "Bilibili UP",
+                url: "https://space.bilibili.com/427691013"
             },
             {
-                icon_name: "bilibili",
-                name: "Green",
-                url: "www.baidu.com"
+                icon_name: "weibo",
+                name: "WeiBo",
+                url: "https://weibo.com/lsjsgzs"
             },
             {
-                icon_name: "bilibili",
-                name: "Blue",
-                url: "www.baidu.com"
+                icon_name: "jianshu",
+                name: "JianShu",
+                url: "https://www.jianshu.com/c/c4a357e1ade3"
             },
             {
-                icon_name: "bilibili",
-                name: "Green",
-                url: "www.baidu.com"
+                icon_name: "wechat",
+                name: "WeChat",
+                url: "https://upload-images.jianshu.io/upload_images/14511997-fd3a87454e9cfde7.jpg"
             },
-            {
-                icon_name: "bilibili",
-                name: "Blue",
-                url: "www.baidu.com"
-            }
+            
         ],
         "bottom-info":{
             bst: {
