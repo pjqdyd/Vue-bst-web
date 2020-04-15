@@ -11,8 +11,8 @@
 
       <!-- 底部信息盒子 -->
       <div class="bottom-info-box" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cf7ae2 100%)'}">
-          <el-link class="bottom-info-text" href="https://www.baidu.com"  type="info" target="_blank">© 2019-2020 蓝色技术工作室</el-link>
-          <el-link class="bottom-info-text" href="https://www.baidu.com"  type="info" target="_blank">&nbsp;江西科技学院</el-link>
+          <el-link class="bottom-info-text" :href="bottomInfo.bst.url"  type="info" target="_blank">{{bottomInfo.bst.name}}</el-link>
+          <el-link class="bottom-info-text" :href="bottomInfo.school.url"  type="info" target="_blank">&nbsp;{{bottomInfo.school.name}}</el-link>
           <mobile-hide>
             <!-- 浮动图标1 -->
             <div class="icon-float1" :style="{color: $store.state.theme}"><icon-float :icon="'&#xe630;'" :size="'60px'"></icon-float></div>
@@ -44,7 +44,12 @@ export default {
   },
   mounted() {
   },
-  methods: {}
+  methods: {},
+  computed: {
+    bottomInfo(){ //底部盒子信息
+      return this.$t("bst.bottom-info");
+    }
+  }
 };
 </script>
 

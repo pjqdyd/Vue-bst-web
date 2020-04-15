@@ -59,6 +59,9 @@ export default {
         line-height: 32px;
         margin: auto;
         color: rgb(16, 17, 19);
+        white-space :nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
     }
 }
 .promote-icon img{

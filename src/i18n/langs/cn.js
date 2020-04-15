@@ -137,7 +137,17 @@ const cn = {
                 url: "www.baidu.com"
             }
             
-        ]
+        ],
+        "bottom-info":{
+            bst: {
+                name: "© 2019-2020 蓝色技术工作室",
+                url: "https://lansejishu.com/"
+            },
+            school: {
+                name: "江西科技学院",
+                url: "http://www.jxut.edu.cn/"
+            }
+        }
 
     },
     button:{
