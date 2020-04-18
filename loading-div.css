@@ -1,0 +1,109 @@
+html{ 
+  overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    font-size: 16px;
+    background-color:#111;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+
+  #init-loading-div{
+    width: 100%;
+    height: calc(90vh);
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+ #load-icon{
+    width: 100px;
+    height: 100px;
+    opacity: 0.9;
+  }
+  
+  #load-text{
+    font-size: 25px;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: YouYuan,'微软雅黑';
+  }
+
+  #load-text-en{
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    font-family: '微软雅黑';
+  }
+
+  #load-ul ul {
+    margin: auto;
+    height: 10px;
+    width: 350px;
+    position: relative;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+  }
+  
+  #load-ul li {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  
+  #load-ul li:nth-child(-n+4) {
+    background: rgba(60,112,234,.8);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 20px rgba(117,182,214,0.5);
+  }
+  
+  #load-ul li:nth-child(n+5) {
+    box-shadow: inset 0px 0px 10px 1px rgba(117,182,255,0.4),
+                      0px 0px 20px rgba(117,182,255,0.1);
+  }
+  
+  #load-ul li:nth-child(5) {
+    -webkit-animation: pulse .4s alternate infinite;
+    -moz-animation: pulse .4s alternate infinite;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      background: rgba(60,112,234,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.4),
+                        0px 0px 40px 2px rgba(105,135,255,1);
+    }
+    100% {
+      background: rgba(54,162,243,0);
+      box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 10px 2px rgba(105,135,255,0.3);
+    }
+  }
+    
+  @-moz-keyframes pulse {
+    0% {
+      background: rgba(60,112,234,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 40px 2px rgba(105,135,255,1);
+    }
+    100% {
+      background: rgba(60,112,234,0);
+      box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                        0px 0px 30px 2px rgba(105,135,255,0.5);
+    }
+  }
