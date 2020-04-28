@@ -12,7 +12,6 @@
       <!-- 底部信息盒子 -->
       <div class="bottom-info-box" :style="{backgroundImage: 'linear-gradient(90deg, ' + $store.state.theme + ' 0%, #cf7ae2 100%)'}">
           <el-link class="bottom-info-text" :href="bottomInfo.bst.url"  type="info" target="_blank">{{bottomInfo.bst.name}}</el-link>
-          <el-link class="bottom-info-text" :href="bottomInfo.school.url"  type="info" target="_blank">&nbsp;{{bottomInfo.school.name}}</el-link>
           <mobile-hide>
             <!-- 浮动图标1 -->
             <div class="icon-float1" :style="{color: $store.state.theme}"><icon-float :icon="'&#xe630;'" :size="'60px'"></icon-float></div>

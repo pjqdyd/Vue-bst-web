@@ -151,10 +151,6 @@ const en = {
             bst: {
                 name: "© 2019-2020 Blue Studio of Technology",
                 url: "https://lansejishu.com/"
-            },
-            school: {
-                name: "Jiangxi University of Technology",
-                url: "http://www.jxut.edu.cn/"
             }
         }
     },
