@@ -3,9 +3,9 @@
   <div>
      <div id="page-four" class="page-four"  :style="{height: $pageHeight+'px' }">
 
-      <!-- Mac风格控制窗 -->
-      <div class="mac-box" :style="{height: $pageHeight - 90  + 'px'}">
-        <console-mac></console-mac>
+      <!-- 推广信息盒子组件 -->
+      <div class="promote-box" :style="{height: $pageHeight - 90  + 'px'}">
+        <promote-box></promote-box>
       </div>
 
 
@@ -26,14 +26,15 @@
 
 <script>
 
-import ConsoleMac from "./component/console-mac.vue"; //Mac风格控制窗组件
+import PromoteBox from "./component/promote-box.vue"; // 推广盒子组件
+
 import IconFloat from "@/components/icon-float/index.vue";   //浮动图标组件
 import MobileHide from "@/components/mobile-hide/index.vue"; //移动端隐藏组件
 
 
 export default {
   components: {
-    ConsoleMac,
+    PromoteBox,
     IconFloat,
     MobileHide
   },
@@ -57,7 +58,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-items: self-end;
-  .mac-box{
+  .promote-box{
     width: 80%;
     margin: auto;
     opacity: .8;
