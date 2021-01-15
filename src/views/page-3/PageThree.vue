@@ -19,7 +19,8 @@
       <div class="card-row-box">
         <el-row id="el-row" type="flex" justify="space-around">
           <el-col span="5" v-for="(cardBG, index) in cardBGList" :key="index">
-            <hardware-card :image="cardBG" :text="textList[index]"></hardware-card>
+              <!--<hardware-card :image="cardBG" :text="textList[index]"></hardware-card>-->
+              <div style="height: 500px; margin-top: 100px;">{{textList[index].title}}</div>
           </el-col>
         </el-row>
       </div>
