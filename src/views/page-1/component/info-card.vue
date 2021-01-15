@@ -30,6 +30,7 @@ export default {
   margin: auto;
   margin-top: 10%;
   margin-right: 10%;
+  color: #fff;
   overflow-y: auto;
   border-radius: 30px;
   box-shadow: 0  1px 10px rgba(0, 0, 150, .2);

@@ -2,7 +2,6 @@
 <template>
   <div>
      <div id="page-four" class="page-four"  :style="{height: $pageHeight+'px' }">
-
       <!-- 推广信息盒子组件 -->
       <div class="promote-box" :style="{height: $pageHeight - 90  + 'px'}">
         <promote-box></promote-box>
@@ -62,9 +61,6 @@ export default {
     width: 80%;
     margin: auto;
     opacity: .8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .bottom-info-box{
     position: relative;

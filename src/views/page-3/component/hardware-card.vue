@@ -60,6 +60,7 @@ export default {
       z-index: 10;
       .card-bg-text{
         width: 100%;
+        color: #fff;
         height: calc(100% - 60px);
         border-radius: 8px 8px 0 0;
         background-size: cover;

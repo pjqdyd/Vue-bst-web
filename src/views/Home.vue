@@ -151,9 +151,9 @@ export default {
   //每一页的默认样式
   #page-one, #page-two, #page-three, #page-four{
     width: 100%;
-    //height: 1000px;
-    //font-size: 50px;
-    color: #fff;
+    // height: 1000px;
+    // font-size: 50px;
+    // color: #fff;
     box-sizing: border-box;
     background-color: $_bgColor;
   }
